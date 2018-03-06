@@ -12,6 +12,7 @@ public class School : MonoBehaviour {
     {
         Spread();
         CalculateColor();
+        System.Threading.Thread.Sleep(1000);
     }
 
     public void CalculateColor()
