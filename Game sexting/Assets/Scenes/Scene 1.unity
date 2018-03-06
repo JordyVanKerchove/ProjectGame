@@ -144,7 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nbrOfStudents: 100
-  nbrOfReachedStudents: 0
+  nbrOfReachedStudents: 1
+  isInfected: 1
 --- !u!23 &1176998545
 MeshRenderer:
   m_ObjectHideFlags: 0
