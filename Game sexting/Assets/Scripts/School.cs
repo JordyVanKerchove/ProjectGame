@@ -12,6 +12,7 @@ public class School : MonoBehaviour {
     {
         Spread();
         CalculateColor();
+        System.Threading.Thread.Sleep(1000);
     }
 
     public void CalculateColor()
@@ -25,8 +26,16 @@ public class School : MonoBehaviour {
         }
         else
         {
-            schoolColor = new Vector4(percentage, 1 - percentage, 0, 0.5f); //If the school is effected it get's a color from green to red
-            this.GetComponent<Renderer>().material.color = schoolColor;
+            if(percentage < 0.5)
+            {
+                schoolColor = new Vector4(percentage * 2, 1 - percentage * 0.66f, 0, 0.5f); //If the school is effected it get's a color from green to red
+                this.GetComponent<Renderer>().material.color = schoolColor;
+            }
+            else if (percentage > 0.5 && percentage <= 1)
+            {
+                schoolColor = new Vector4(1, 1 - percentage, 0, 0.5f); //If the school is effected it get's a color from green to red
+                this.GetComponent<Renderer>().material.color = schoolColor;
+            }
         }
     } //Calculates the color of the school
 
