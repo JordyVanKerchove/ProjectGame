@@ -69,7 +69,7 @@ public class School : MonoBehaviour {
             }
 
         }
-    }
+    } //Spreads in this school
 
     public void SpreadToOtherSchools()
     {
@@ -81,7 +81,7 @@ public class School : MonoBehaviour {
                 otherSchool.nbrOfReachedStudents = 1;
             }
         }
-    }
+    } //Spreads to other schools
 }
 
     
