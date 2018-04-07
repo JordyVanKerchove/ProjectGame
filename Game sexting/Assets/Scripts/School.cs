@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class School : MonoBehaviour {
 
+    public School otherSchool;
     public ushort nbrOfStudents;
     public ushort nbrOfReachedStudents; //The number of students of the school that recieved the picture
     public bool isInfected = false;
@@ -12,6 +13,7 @@ public class School : MonoBehaviour {
     {
         Spread();
         CalculateColor();
+        SpreadToOtherSchools();
         System.Threading.Thread.Sleep(1000);
     }
 
@@ -46,7 +48,7 @@ public class School : MonoBehaviour {
         percentage = (float)((float)nbrOfReachedStudents / (float)nbrOfStudents);
 
         return percentage;
-    } //Calculates teh percentage of students that recieved the picture
+    } //Calculates the percentage of students that recieved the picture
 
     public void Spread()
     {
@@ -66,6 +68,18 @@ public class School : MonoBehaviour {
                 nbrOfReachedStudents = nbrOfStudents;
             }
 
+        }
+    }
+
+    public void SpreadToOtherSchools()
+    {
+        ushort newRandomNumber = (ushort)Random.Range(0, nbrOfStudents);
+        if(newRandomNumber > nbrOfReachedStudents)
+        {
+            if(otherSchool.isInfected == false)
+            {
+                otherSchool.nbrOfReachedStudents = 1;
+            }
         }
     }
 }
