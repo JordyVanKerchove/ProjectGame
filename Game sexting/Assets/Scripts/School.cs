@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class School : MonoBehaviour {
 
-    public School otherSchool;
     public ushort nbrOfStudents;
     public ushort nbrOfReachedStudents; //The number of students of the school that recieved the picture
     public bool isInfected = false;
@@ -13,8 +12,6 @@ public class School : MonoBehaviour {
     {
         Spread();
         CalculateColor();
-        SpreadToOtherSchools();
-        System.Threading.Thread.Sleep(1000);
     }
 
     public void CalculateColor()
@@ -28,16 +25,8 @@ public class School : MonoBehaviour {
         }
         else
         {
-            if(percentage < 0.5)
-            {
-                schoolColor = new Vector4(percentage * 2, 1 - percentage * 0.66f, 0, 0.5f); //If the school is effected it get's a color from green to red
-                this.GetComponent<Renderer>().material.color = schoolColor;
-            }
-            else if (percentage > 0.5 && percentage <= 1)
-            {
-                schoolColor = new Vector4(1, 1 - percentage, 0, 0.5f); //If the school is effected it get's a color from green to red
-                this.GetComponent<Renderer>().material.color = schoolColor;
-            }
+            schoolColor = new Vector4(percentage, 1 - percentage, 0, 0.5f); //If the school is effected it get's a color from green to red
+            this.GetComponent<Renderer>().material.color = schoolColor;
         }
     } //Calculates the color of the school
 
@@ -48,7 +37,7 @@ public class School : MonoBehaviour {
         percentage = (float)((float)nbrOfReachedStudents / (float)nbrOfStudents);
 
         return percentage;
-    } //Calculates the percentage of students that recieved the picture
+    } //Calculates teh percentage of students that recieved the picture
 
     public void Spread()
     {
@@ -69,19 +58,7 @@ public class School : MonoBehaviour {
             }
 
         }
-    } //Spreads in this school
-
-    public void SpreadToOtherSchools()
-    {
-        ushort newRandomNumber = (ushort)Random.Range(0, nbrOfStudents);
-        if(newRandomNumber > nbrOfReachedStudents)
-        {
-            if(otherSchool.isInfected == false)
-            {
-                otherSchool.nbrOfReachedStudents = 1;
-            }
-        }
-    } //Spreads to other schools
+    }
 }
 
     
