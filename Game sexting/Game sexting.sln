@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game sexting", "Game sexting.csproj", "{B71CB39B-C8F6-E9CB-FA54-A52538416EF1}"
 EndProject
 Global
