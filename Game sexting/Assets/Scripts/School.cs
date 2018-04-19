@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class School : MonoBehaviour {
 
-    public School[] otherSchools = new School[5];
+    public School[] otherSchools = new School[4];
     public ushort nbrOfStudents;
     public ushort nbrOfReachedStudents; //The number of students of the school that recieved the picture
     public bool isInfected = false;
 
     void Update()
     {
+        System.Threading.Thread.Sleep(1000);
+
         Spread();
+        CalculatePercentage();
         CalculateColor();
+        SpreadToOtherSchools();
     }
 
     public void CalculateColor()
@@ -66,7 +70,7 @@ public class School : MonoBehaviour {
         ushort newRandomNumber = (ushort)Random.Range(0, nbrOfStudents);
         if(newRandomNumber > nbrOfReachedStudents)
         {
-            newRandomNumber = (ushort)Random.Range(0, 5);
+            newRandomNumber = (ushort)Random.Range(0, 4);
 
             if(otherSchools[newRandomNumber].isInfected == false)
             {
