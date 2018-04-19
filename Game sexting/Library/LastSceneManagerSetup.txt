@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/MaterialUI/StarterScene.unity
+=======
+- path: Assets/Scenes/New Scene.unity
+>>>>>>> abcc8dd4102ec6740cd8668d0760e78d7ea3b86b
   isLoaded: 1
   isActive: 1

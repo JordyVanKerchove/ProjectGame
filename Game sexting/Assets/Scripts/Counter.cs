@@ -3,27 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Counter : MonoBehaviour
-{
+public class Counter : MonoBehaviour {
 
-    public School[] schools = new School[2];
-    public ushort totalStudentsReached;
-    public Text counterText;
+    public School[] schools = new School[5];
+    public Text UICounter;
+    ushort totalNbrOfInfectedStudents;
 
-    void Update()
-    {
-        totalStudentsReached = 0;
+    // Use this for initialization
+    void Start () {
+        
+	}
+	
+	// Update is called once per frame
+	void Update () {
+        totalNbrOfInfectedStudents = 0;
 
-        for (int i = 0; i < schools.Length; i++)
+		for(int i = 0; i < schools.Length; i++)
         {
-            totalStudentsReached += schools[i].nbrOfReachedStudents;
+            totalNbrOfInfectedStudents += schools[i].nbrOfReachedStudents;
         }
 
         UpdateUI();
-    }
-
+	}
+    
     void UpdateUI()
     {
-        counterText.text = totalStudentsReached.ToString();
+        UICounter.text = totalNbrOfInfectedStudents.ToString();
     }
 }
