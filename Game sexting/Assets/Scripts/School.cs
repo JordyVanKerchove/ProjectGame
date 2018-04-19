@@ -12,7 +12,9 @@ public class School : MonoBehaviour {
     void Update()
     {
         Spread();
+        CalculatePercentage();
         CalculateColor();
+        SpreadToOtherSchools();
     }
 
     public void CalculateColor()
