@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class School : MonoBehaviour {
 
+    public enum colors {Grey, Green, Orange, Red};
+    public byte currentcolor;
+
+    float percentage;
+
     public School[] otherSchools = new School[4];
     public ushort nbrOfStudents;
     public ushort nbrOfReachedStudents; //The number of students of the school that recieved the picture
@@ -26,19 +31,30 @@ public class School : MonoBehaviour {
 
         if (!isInfected)
         {
-            this.GetComponent<Renderer>().material.color = Color.grey; //If the school isn't effected it get's the color grey
+            currentcolor = (byte)colors.Grey; //If the school isn't effected it get's the color grey
         }
         else
         {
             schoolColor = new Vector4(percentage, 1 - percentage, 0, 0.5f); //If the school is effected it get's a color from green to red
             this.GetComponent<Renderer>().material.color = schoolColor;
+
+            if(percentage <= 0.33)
+            {
+                currentcolor = (byte)colors.Green;
+            }
+            else if(percentage > 0.66)
+            {
+                currentcolor = (byte)colors.Orange;
+            }
+            else
+            {
+                currentcolor = (byte)colors.Red;
+            }
         }
     } //Calculates the color of the school
 
     public float CalculatePercentage()
     {
-        float percentage;
-
         percentage = (float)((float)nbrOfReachedStudents / (float)nbrOfStudents);
 
         return percentage;
