@@ -46,7 +46,8 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
-        // sets all panels to false and the beginning panel as true
+        // sets all panels to false and the beginning panel as true at the start of the game 
+       
         storyPanel1.SetActive(true);
         storyPanel2A.SetActive(false);
         storyPanel2B.SetActive(false);
@@ -78,7 +79,9 @@ public class GameManager : MonoBehaviour {
         panel8.SetActive(false);
         panel9.SetActive(false);
         panel10.SetActive(false);
-    }
+    }  
+
+    
 
     void SetCurrentQuestion()
     {
@@ -86,6 +89,7 @@ public class GameManager : MonoBehaviour {
         switch (questionNumber)
         {
             case 1:
+                
                 panel1.SetActive(false); // zet panel 1 uit
 
                 if (firstButton == true && secondButton == false) // bovenste knop vraag 1
@@ -261,6 +265,7 @@ public class GameManager : MonoBehaviour {
 
 
     // IF "Volgende" is clicked on one of these panels.
+
     public void IfStoryPanel1()
     {
         storyPanel1.SetActive(false);

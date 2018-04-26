@@ -17,18 +17,27 @@ public class Timer : MonoBehaviour {
 	void Start () {
         startDate = DateTime.Now;
         currentDate = startDate;
-	}
+
+        StartCoroutine(Sleep1Sec());
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        UpdateUI();
-        UpdateSchools();
-
-        System.Threading.Thread.Sleep(1000);
-
-
-        currentDate = currentDate.AddDays(1);
+       
 	}
+
+    IEnumerator Sleep1Sec()
+    {
+        for (int i = 0; i < 500; i++)
+        {
+            UpdateUI();
+            UpdateSchools();
+            yield return new WaitForSeconds(1f);
+            currentDate = currentDate.AddDays(1);
+        }
+       
+    }
 
     void UpdateUI()
     {
