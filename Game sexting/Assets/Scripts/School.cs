@@ -6,18 +6,20 @@ public class School : MonoBehaviour {
 
     public enum colors {Grey, Green, Orange, Red};
     public byte currentColor;
+    Color schoolColor;
+    Color orange;
 
     float percentage;
+    
 
-    public Sprite[] colorSprites = new Sprite[4];
-    public Sprite currentSprite;
     public School[] otherSchools = new School[4];
     public ushort nbrOfStudents;
     public ushort nbrOfReachedStudents; //The number of students of the school that recieved the picture
     public bool isInfected = false;
-    
+
     void start()
     {
+        orange = new Color(0.2F, 0.3F, 0.4F);
         isInfected = false;
         nbrOfReachedStudents = 0;
     }
@@ -32,7 +34,7 @@ public class School : MonoBehaviour {
 
     public void CalculateColor()
     {
-        Color schoolColor = new Color();
+        schoolColor = new Color();
         float percentage = CalculatePercentage();
 
         if (!isInfected)
@@ -41,9 +43,6 @@ public class School : MonoBehaviour {
         }
         else
         {
-            schoolColor = new Vector4(percentage, 1 - percentage, 0, 0.5f); //If the school is effected it get's a color from green to red
-            this.GetComponent<Renderer>().material.color = schoolColor;
-
             if(percentage <= 0.33)
             {
                 currentColor = (byte)colors.Green;
@@ -57,7 +56,7 @@ public class School : MonoBehaviour {
                 currentColor = (byte)colors.Red;
             }
         }
-        Debug.Log(currentColor);
+        //Debug.Log(currentColor);
         ChangeColor();
     } //Calculates the color of the school
 
@@ -66,21 +65,24 @@ public class School : MonoBehaviour {
          switch(currentColor)
         {
             case 0:
-                currentSprite = colorSprites[0];
+                schoolColor = Color.gray;
                 break;
             case 1:
-                currentSprite = colorSprites[1];
+                schoolColor = Color.green;
                 break;
             case 2:
-                currentSprite = colorSprites[2];
+                schoolColor.r = 1;
+                schoolColor.g = 0.5f;
+                schoolColor.b = 0;
+                schoolColor.a = 1;
                 break;
             case 3:
-                currentSprite = colorSprites[3];
+                schoolColor = Color.red;
                 break;
             default:
                 break;
         }
-        gameObject.GetComponent<SpriteRenderer>().sprite = currentSprite;
+        gameObject.GetComponent<SpriteRenderer>().color = schoolColor;
     }
 
     public float CalculatePercentage()
