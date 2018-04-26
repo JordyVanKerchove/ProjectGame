@@ -154,6 +154,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 fc432a39eaeef78297108013f8d37dcf Assembly-CSharp.dll:MaterialUI.ToastAnim
 50a0fa002cfc67638c87a901e46b763e Assembly-CSharp.dll:TMPro.Examples.TMP_TextSelector_B
+07a51faea20ab4e487e55d9e188ca2e1 Assembly-CSharp.dll:.MenuButtons
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.Benchmark03
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:MaterialUI.SelectionBoxSubscriber
 b9332c0eee630779376843b5343eb250 Assembly-CSharp.dll:TMPro.Examples.TMP_TextInfoDebugTool
@@ -267,4 +268,3 @@ a885b5718618457f4959f03284f3d6c2 Assembly-CSharp.dll:MaterialUI.TextInputLine
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
 5ab1677d31916f29db021c86cd24d748 Assembly-CSharp.dll:MaterialUI.MenuArrowAnim
-07a51faea20ab4e487e55d9e188ca2e1 Assembly-CSharp.dll:.MenuButtons
