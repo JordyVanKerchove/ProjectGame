@@ -10,7 +10,9 @@ public class School : MonoBehaviour {
     Color orange;
 
     float percentage;
-    
+
+    public float spreadFactor;
+    public float tempNbrOfReachedStudents;
 
     public School[] otherSchools = new School[4];
     public ushort nbrOfStudents;
@@ -22,6 +24,7 @@ public class School : MonoBehaviour {
         orange = new Color(0.2F, 0.3F, 0.4F);
         isInfected = false;
         nbrOfReachedStudents = 0;
+        spreadFactor = 1;
     }
 
     public void ChangeAppearence()
@@ -96,20 +99,16 @@ public class School : MonoBehaviour {
     {
         if (nbrOfReachedStudents < nbrOfStudents && isInfected == true)
         {
-            if(nbrOfReachedStudents % 2 == 0)
+            tempNbrOfReachedStudents += spreadFactor * nbrOfReachedStudents / 4;
+            if(tempNbrOfReachedStudents >= 1)
             {
-                nbrOfReachedStudents += (ushort)(nbrOfReachedStudents / 2);
-            }
-            else
-            {
-                nbrOfReachedStudents += (ushort)((nbrOfReachedStudents + 1) / 2);
+                nbrOfReachedStudents += (ushort)Mathf.Round(tempNbrOfReachedStudents);
             }
 
             if (nbrOfReachedStudents >= nbrOfStudents)
             {
                 nbrOfReachedStudents = nbrOfStudents;
             }
-
         }
     } //Spreads in this school
 
