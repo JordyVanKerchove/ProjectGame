@@ -6,6 +6,9 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour {
 
+    public Timer timer;
+    public bool mustStop;
+
     private bool firstButton = false;
     private bool secondButton = false;
     private int questionNumber = 0; 
@@ -46,6 +49,7 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
+        Time.timeScale = 0f;
         // sets all panels to false and the beginning panel as true at the start of the game 
        
         storyPanel1.SetActive(true);
@@ -81,7 +85,31 @@ public class GameManager : MonoBehaviour {
         panel10.SetActive(false);
     }  
 
-    
+    void Update()
+    {
+        switch (timer.nbrOfDays)
+        {
+            case 7:
+                panel1.SetActive(true);
+                if (mustStop)
+                {
+                    Time.timeScale = 0f;
+                    mustStop = false;
+                }
+                break;
+            case 14:
+                panel2.SetActive(true);
+                if (mustStop)
+                {
+                    Time.timeScale = 0f;
+                    mustStop = false;
+                }
+                break;
+            default:
+                mustStop = true;
+                break;
+        }
+    }
 
     void SetCurrentQuestion()
     {
@@ -89,7 +117,6 @@ public class GameManager : MonoBehaviour {
         switch (questionNumber)
         {
             case 1:
-                
                 panel1.SetActive(false); // zet panel 1 uit
 
                 if (firstButton == true && secondButton == false) // bovenste knop vraag 1
@@ -102,7 +129,7 @@ public class GameManager : MonoBehaviour {
                     Debug.Log("switch second button vraag 1");
                     storyPanel2B.SetActive(true);
                 }
-
+                
                 break;
 
             case 2:
@@ -117,7 +144,6 @@ public class GameManager : MonoBehaviour {
                     Debug.Log("switch second button vraag 2");
                     storyPanel3B.SetActive(true);
                 }
-                
                 break;
 
             case 3:
@@ -132,7 +158,6 @@ public class GameManager : MonoBehaviour {
                     Debug.Log("switch second button vraag 3");
                     storyPanel4B.SetActive(true);
                 }
-                
                 break;
 
             case 4:
@@ -269,76 +294,98 @@ public class GameManager : MonoBehaviour {
     public void IfStoryPanel1()
     {
         storyPanel1.SetActive(false);
-        panel1.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel1.SetActive(true);
     }
 
     public void IfStoryPanel2()
     {
         storyPanel2A.SetActive(false);
         storyPanel2B.SetActive(false);
-        panel2.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel2.SetActive(true);
     }
 
     public void IfStoryPanel3()
     {
         storyPanel3A.SetActive(false);
         storyPanel3B.SetActive(false);
-        panel3.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel3.SetActive(true);
     }
 
     public void IfStoryPanel4()
     {
         storyPanel4A.SetActive(false);
         storyPanel4B.SetActive(false);
-        panel4.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel4.SetActive(true);
     }
 
     public void IfStoryPanel5()
     {
         storyPanel5A.SetActive(false);
         storyPanel5B.SetActive(false);
-        panel5.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel5.SetActive(true);
     }
 
     public void IfStoryPanel6()
     {
         storyPanel6A.SetActive(false);
         storyPanel6B.SetActive(false);
-        panel6.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel6.SetActive(true);
     }
 
     public void IfStoryPanel7()
     {
         storyPanel7A.SetActive(false);
         storyPanel7B.SetActive(false);
-        panel7.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel7.SetActive(true);
     }
 
     public void IfStoryPanel8()
     {
         storyPanel8A.SetActive(false);
         storyPanel8B.SetActive(false);
-        panel8.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel8.SetActive(true);
     }
 
     public void IfStoryPanel9()
     {
         storyPanel9A.SetActive(false);
         storyPanel9B.SetActive(false);
-        panel9.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel9.SetActive(true);
     }
 
     public void IfStoryPanel10()
     {
         storyPanel10A.SetActive(false);
         storyPanel10B.SetActive(false);
-        panel10.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel10.SetActive(true);
     }
 
     public void IfStoryPanel11()
     {
         storyPanel11A.SetActive(false);
         storyPanel11B.SetActive(false);
-        endPanel.SetActive(true);
+
+        Time.timeScale = 1f;
+        //endPanel.SetActive(true);
     }
 }

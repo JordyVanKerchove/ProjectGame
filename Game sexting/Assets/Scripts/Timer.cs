@@ -12,9 +12,11 @@ public class Timer : MonoBehaviour {
     DateTime startDate;
     DateTime currentDate;
     public Text UITimer;
+    public ushort nbrOfDays;
     
 	// Use this for initialization
 	void Start () {
+        nbrOfDays = 0;
         startDate = DateTime.Now;
         currentDate = startDate;
 
@@ -35,6 +37,7 @@ public class Timer : MonoBehaviour {
             UpdateSchools();
             yield return new WaitForSeconds(1f);
             currentDate = currentDate.AddDays(1);
+            nbrOfDays++;
         }
        
     }
