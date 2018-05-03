@@ -7,6 +7,7 @@ using System.Linq;
 public class GameManager : MonoBehaviour {
 
     public Timer timer;
+    public bool mustStop;
 
     private bool firstButton = false;
     private bool secondButton = false;
@@ -90,38 +91,22 @@ public class GameManager : MonoBehaviour {
         {
             case 7:
                 panel1.SetActive(true);
+                if (mustStop)
+                {
+                    Time.timeScale = 0f;
+                    mustStop = false;
+                }
                 break;
-            case 20:
+            case 14:
                 panel2.SetActive(true);
-                break;
-            case 80:
-                panel3.SetActive(true);
-                break;
-            case 120:
-                panel4.SetActive(true);
-                break;
-            case 160:
-                panel5.SetActive(true);
-                break;
-            case 180:
-                panel6.SetActive(true);
-                break;
-            case 220:
-                panel7.SetActive(true);
-                break;
-            case 260:
-                panel8.SetActive(true);
-                break;
-            case 320:
-                panel9.SetActive(true);
-                break;
-            case 380:
-                panel10.SetActive(true);
-                break;
-            case 460:
-                endPanel.SetActive(true);
+                if (mustStop)
+                {
+                    Time.timeScale = 0f;
+                    mustStop = false;
+                }
                 break;
             default:
+                mustStop = true;
                 break;
         }
     }
@@ -132,7 +117,6 @@ public class GameManager : MonoBehaviour {
         switch (questionNumber)
         {
             case 1:
-                
                 panel1.SetActive(false); // zet panel 1 uit
 
                 if (firstButton == true && secondButton == false) // bovenste knop vraag 1
@@ -145,7 +129,7 @@ public class GameManager : MonoBehaviour {
                     Debug.Log("switch second button vraag 1");
                     storyPanel2B.SetActive(true);
                 }
-
+                
                 break;
 
             case 2:
@@ -160,7 +144,6 @@ public class GameManager : MonoBehaviour {
                     Debug.Log("switch second button vraag 2");
                     storyPanel3B.SetActive(true);
                 }
-                
                 break;
 
             case 3:
@@ -175,7 +158,6 @@ public class GameManager : MonoBehaviour {
                     Debug.Log("switch second button vraag 3");
                     storyPanel4B.SetActive(true);
                 }
-                
                 break;
 
             case 4:
@@ -330,6 +312,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel3A.SetActive(false);
         storyPanel3B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel3.SetActive(true);
     }
 
@@ -337,6 +321,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel4A.SetActive(false);
         storyPanel4B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel4.SetActive(true);
     }
 
@@ -344,6 +330,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel5A.SetActive(false);
         storyPanel5B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel5.SetActive(true);
     }
 
@@ -351,6 +339,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel6A.SetActive(false);
         storyPanel6B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel6.SetActive(true);
     }
 
@@ -358,6 +348,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel7A.SetActive(false);
         storyPanel7B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel7.SetActive(true);
     }
 
@@ -365,6 +357,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel8A.SetActive(false);
         storyPanel8B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel8.SetActive(true);
     }
 
@@ -372,6 +366,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel9A.SetActive(false);
         storyPanel9B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel9.SetActive(true);
     }
 
@@ -379,6 +375,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel10A.SetActive(false);
         storyPanel10B.SetActive(false);
+
+        Time.timeScale = 1f;
         //panel10.SetActive(true);
     }
 
@@ -386,6 +384,8 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel11A.SetActive(false);
         storyPanel11B.SetActive(false);
+
+        Time.timeScale = 1f;
         //endPanel.SetActive(true);
     }
 }
