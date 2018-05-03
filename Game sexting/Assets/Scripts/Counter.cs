@@ -7,7 +7,7 @@ public class Counter : MonoBehaviour {
 
     public School[] schools = new School[5];
     public Text UICounter;
-    ushort totalNbrOfInfectedStudents;
+    public ushort totalNbrOfInfectedStudents;
 
     // Use this for initialization
     void Start () {
