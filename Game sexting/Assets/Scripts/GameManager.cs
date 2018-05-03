@@ -6,6 +6,8 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour {
 
+    public Timer timer;
+
     private bool firstButton = false;
     private bool secondButton = false;
     private int questionNumber = 0; 
@@ -46,6 +48,7 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
+        Time.timeScale = 0f;
         // sets all panels to false and the beginning panel as true at the start of the game 
        
         storyPanel1.SetActive(true);
@@ -81,7 +84,47 @@ public class GameManager : MonoBehaviour {
         panel10.SetActive(false);
     }  
 
-    
+    void Update()
+    {
+        switch (timer.nbrOfDays)
+        {
+            case 7:
+                panel1.SetActive(true);
+                break;
+            case 20:
+                panel2.SetActive(true);
+                break;
+            case 80:
+                panel3.SetActive(true);
+                break;
+            case 120:
+                panel4.SetActive(true);
+                break;
+            case 160:
+                panel5.SetActive(true);
+                break;
+            case 180:
+                panel6.SetActive(true);
+                break;
+            case 220:
+                panel7.SetActive(true);
+                break;
+            case 260:
+                panel8.SetActive(true);
+                break;
+            case 320:
+                panel9.SetActive(true);
+                break;
+            case 380:
+                panel10.SetActive(true);
+                break;
+            case 460:
+                endPanel.SetActive(true);
+                break;
+            default:
+                break;
+        }
+    }
 
     void SetCurrentQuestion()
     {
@@ -269,76 +312,80 @@ public class GameManager : MonoBehaviour {
     public void IfStoryPanel1()
     {
         storyPanel1.SetActive(false);
-        panel1.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel1.SetActive(true);
     }
 
     public void IfStoryPanel2()
     {
         storyPanel2A.SetActive(false);
         storyPanel2B.SetActive(false);
-        panel2.SetActive(true);
+
+        Time.timeScale = 1f;
+        //panel2.SetActive(true);
     }
 
     public void IfStoryPanel3()
     {
         storyPanel3A.SetActive(false);
         storyPanel3B.SetActive(false);
-        panel3.SetActive(true);
+        //panel3.SetActive(true);
     }
 
     public void IfStoryPanel4()
     {
         storyPanel4A.SetActive(false);
         storyPanel4B.SetActive(false);
-        panel4.SetActive(true);
+        //panel4.SetActive(true);
     }
 
     public void IfStoryPanel5()
     {
         storyPanel5A.SetActive(false);
         storyPanel5B.SetActive(false);
-        panel5.SetActive(true);
+        //panel5.SetActive(true);
     }
 
     public void IfStoryPanel6()
     {
         storyPanel6A.SetActive(false);
         storyPanel6B.SetActive(false);
-        panel6.SetActive(true);
+        //panel6.SetActive(true);
     }
 
     public void IfStoryPanel7()
     {
         storyPanel7A.SetActive(false);
         storyPanel7B.SetActive(false);
-        panel7.SetActive(true);
+        //panel7.SetActive(true);
     }
 
     public void IfStoryPanel8()
     {
         storyPanel8A.SetActive(false);
         storyPanel8B.SetActive(false);
-        panel8.SetActive(true);
+        //panel8.SetActive(true);
     }
 
     public void IfStoryPanel9()
     {
         storyPanel9A.SetActive(false);
         storyPanel9B.SetActive(false);
-        panel9.SetActive(true);
+        //panel9.SetActive(true);
     }
 
     public void IfStoryPanel10()
     {
         storyPanel10A.SetActive(false);
         storyPanel10B.SetActive(false);
-        panel10.SetActive(true);
+        //panel10.SetActive(true);
     }
 
     public void IfStoryPanel11()
     {
         storyPanel11A.SetActive(false);
         storyPanel11B.SetActive(false);
-        endPanel.SetActive(true);
+        //endPanel.SetActive(true);
     }
 }

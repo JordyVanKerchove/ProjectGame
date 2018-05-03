@@ -99,7 +99,8 @@ public class School : MonoBehaviour {
     {
         if (nbrOfReachedStudents < nbrOfStudents && isInfected == true)
         {
-            tempNbrOfReachedStudents += spreadFactor * nbrOfReachedStudents / 4;
+            tempNbrOfReachedStudents += (nbrOfReachedStudents / 16);
+            tempNbrOfReachedStudents *= spreadFactor;
             if(tempNbrOfReachedStudents >= 1)
             {
                 nbrOfReachedStudents += (ushort)Mathf.Round(tempNbrOfReachedStudents);
@@ -122,6 +123,7 @@ public class School : MonoBehaviour {
             if(otherSchools[newRandomNumber].isInfected == false)
             {
                 otherSchools[newRandomNumber].nbrOfReachedStudents = 1;
+                otherSchools[newRandomNumber].tempNbrOfReachedStudents = 1;
                 otherSchools[newRandomNumber].isInfected = true;
             }
         }
