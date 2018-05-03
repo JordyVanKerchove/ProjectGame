@@ -3753,6 +3753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentColor: 0
+  spreadFactor: 0
+  tempNbrOfReachedStudents: 0
   otherSchools:
   - {fileID: 152015938}
   - {fileID: 1238282525}
@@ -3812,7 +3814,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 106271675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3, y: 19.9, z: 100}
+  m_LocalPosition: {x: 54, y: -17.5, z: 100}
   m_LocalScale: {x: 2.7758195, y: 2.7201023, z: 1.7442123}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4519,6 +4521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentColor: 0
+  spreadFactor: 0
+  tempNbrOfReachedStudents: 1
   otherSchools:
   - {fileID: 1238282525}
   - {fileID: 1981086417}
@@ -4578,7 +4582,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 152015937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.699574, y: -20.944448, z: 100}
+  m_LocalPosition: {x: -9.1, y: 19.6, z: 100}
   m_LocalScale: {x: 2.7758195, y: 2.7201023, z: 1.7442123}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23889,6 +23893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentColor: 0
+  spreadFactor: 0
+  tempNbrOfReachedStudents: 0
   otherSchools:
   - {fileID: 152015938}
   - {fileID: 1981086417}
@@ -28649,6 +28655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentColor: 0
+  spreadFactor: 0
+  tempNbrOfReachedStudents: 0
   otherSchools:
   - {fileID: 152015938}
   - {fileID: 1238282525}
@@ -40890,6 +40898,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentColor: 0
+  spreadFactor: 0
+  tempNbrOfReachedStudents: 0
   otherSchools:
   - {fileID: 152015938}
   - {fileID: 1238282525}
@@ -40949,7 +40959,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1981086416}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -75.3, y: -11.6, z: 100}
+  m_LocalPosition: {x: -66.5, y: -28.2, z: 100}
   m_LocalScale: {x: 2.7758195, y: 2.7201023, z: 1.7442123}
   m_Children: []
   m_Father: {fileID: 0}
