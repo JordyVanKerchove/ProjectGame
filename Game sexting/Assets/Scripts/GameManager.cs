@@ -49,7 +49,6 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
-        Time.timeScale = 0f;
         // sets all panels to false and the beginning panel as true at the start of the game 
        
         storyPanel1.SetActive(true);
@@ -90,18 +89,18 @@ public class GameManager : MonoBehaviour {
         switch (timer.nbrOfDays)
         {
             case 7:
-                panel1.SetActive(true);
                 if (mustStop)
                 {
-                    Time.timeScale = 0f;
+                    panel1.SetActive(true);
+                    PauseSchools();
                     mustStop = false;
                 }
                 break;
             case 14:
-                panel2.SetActive(true);
                 if (mustStop)
                 {
-                    Time.timeScale = 0f;
+                    panel2.SetActive(true);
+                    PauseSchools();
                     mustStop = false;
                 }
                 break;
@@ -118,7 +117,7 @@ public class GameManager : MonoBehaviour {
         {
             case 1:
                 panel1.SetActive(false); // zet panel 1 uit
-
+                
                 if (firstButton == true && secondButton == false) // bovenste knop vraag 1
                 {
                     Debug.Log("switch first button vraag 1");
@@ -129,7 +128,6 @@ public class GameManager : MonoBehaviour {
                     Debug.Log("switch second button vraag 1");
                     storyPanel2B.SetActive(true);
                 }
-                
                 break;
 
             case 2:
@@ -295,7 +293,7 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel1.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel1.SetActive(true);
     }
 
@@ -304,7 +302,7 @@ public class GameManager : MonoBehaviour {
         storyPanel2A.SetActive(false);
         storyPanel2B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel2.SetActive(true);
     }
 
@@ -313,7 +311,7 @@ public class GameManager : MonoBehaviour {
         storyPanel3A.SetActive(false);
         storyPanel3B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel3.SetActive(true);
     }
 
@@ -322,7 +320,7 @@ public class GameManager : MonoBehaviour {
         storyPanel4A.SetActive(false);
         storyPanel4B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel4.SetActive(true);
     }
 
@@ -331,7 +329,7 @@ public class GameManager : MonoBehaviour {
         storyPanel5A.SetActive(false);
         storyPanel5B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel5.SetActive(true);
     }
 
@@ -340,7 +338,7 @@ public class GameManager : MonoBehaviour {
         storyPanel6A.SetActive(false);
         storyPanel6B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel6.SetActive(true);
     }
 
@@ -349,7 +347,7 @@ public class GameManager : MonoBehaviour {
         storyPanel7A.SetActive(false);
         storyPanel7B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel7.SetActive(true);
     }
 
@@ -358,7 +356,7 @@ public class GameManager : MonoBehaviour {
         storyPanel8A.SetActive(false);
         storyPanel8B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel8.SetActive(true);
     }
 
@@ -367,7 +365,7 @@ public class GameManager : MonoBehaviour {
         storyPanel9A.SetActive(false);
         storyPanel9B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel9.SetActive(true);
     }
 
@@ -376,7 +374,7 @@ public class GameManager : MonoBehaviour {
         storyPanel10A.SetActive(false);
         storyPanel10B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //panel10.SetActive(true);
     }
 
@@ -385,7 +383,17 @@ public class GameManager : MonoBehaviour {
         storyPanel11A.SetActive(false);
         storyPanel11B.SetActive(false);
 
-        Time.timeScale = 1f;
+        RestartSchools();
         //endPanel.SetActive(true);
+    }
+
+    public void PauseSchools()
+    {
+        timer.isPaused = true;
+    }
+
+    public void RestartSchools()
+    {
+        timer.isPaused = false;
     }
 }

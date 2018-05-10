@@ -13,6 +13,9 @@ public class Timer : MonoBehaviour {
     DateTime currentDate;
     public Text UITimer;
     public ushort nbrOfDays;
+
+    public bool isPaused;
+    public bool coRoutineIsRunning;
     
 	// Use this for initialization
 	void Start () {
@@ -20,26 +23,36 @@ public class Timer : MonoBehaviour {
         startDate = DateTime.Now;
         currentDate = startDate;
 
+        isPaused = true;
+        coRoutineIsRunning = true;
+
         StartCoroutine(Sleep1Sec());
-        
     }
 	
 	// Update is called once per frame
 	void Update () {
-       
+       if (!coRoutineIsRunning)
+        {
+            StartCoroutine(Sleep1Sec());
+        }
 	}
 
     IEnumerator Sleep1Sec()
     {
-        for (int i = 0; i < 500; i++)
+        coRoutineIsRunning = true;
+        //for (int i = 0; i < 500; i++)
         {
-            UpdateUI();
-            UpdateSchools();
-            yield return new WaitForSeconds(1f);
-            currentDate = currentDate.AddDays(1);
-            nbrOfDays++;
+            Debug.Log(isPaused);
+            if (!isPaused)
+            {
+                UpdateUI();
+                UpdateSchools();
+                yield return new WaitForSeconds(1f);
+                currentDate = currentDate.AddDays(1);
+                nbrOfDays++;
+            }
+            coRoutineIsRunning = false;
         }
-       
     }
 
     void UpdateUI()

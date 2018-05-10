@@ -6710,6 +6710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1960630652}
+  mustStop: 0
   panel1: {fileID: 771405730}
   panel2: {fileID: 1750966321}
   panel3: {fileID: 1789649774}
@@ -39624,7 +39625,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 523, y: 43}
+  m_SizeDelta: {x: 434, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904170022
 MonoBehaviour:
@@ -41122,6 +41123,8 @@ MonoBehaviour:
   - {fileID: 1410064056}
   UITimer: {fileID: 935946542}
   nbrOfDays: 0
+  isPaused: 0
+  coRoutineIsRunning: 0
 --- !u!1 &1966715365
 GameObject:
   m_ObjectHideFlags: 0
