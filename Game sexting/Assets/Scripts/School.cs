@@ -99,7 +99,7 @@ public class School : MonoBehaviour {
     {
         if (nbrOfReachedStudents < nbrOfStudents && isInfected == true)
         {
-            tempNbrOfReachedStudents += (nbrOfReachedStudents / 16);
+            tempNbrOfReachedStudents += (nbrOfReachedStudents / 30);
             tempNbrOfReachedStudents *= spreadFactor;
             if(tempNbrOfReachedStudents >= 1)
             {
