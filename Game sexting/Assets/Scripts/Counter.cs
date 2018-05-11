@@ -7,6 +7,7 @@ public class Counter : MonoBehaviour {
 
     public School[] schools = new School[5];
     public Text UICounter;
+    public Text[] UIMiniCounters = new Text[5];
     public ushort totalNbrOfInfectedStudents;
 
     // Use this for initialization
@@ -21,6 +22,7 @@ public class Counter : MonoBehaviour {
 		for(int i = 0; i < schools.Length; i++)
         {
             totalNbrOfInfectedStudents += schools[i].nbrOfReachedStudents;
+            UIMiniCounters[i].text = schools[i].nbrOfReachedStudents.ToString();
         }
 
         UpdateUI();
