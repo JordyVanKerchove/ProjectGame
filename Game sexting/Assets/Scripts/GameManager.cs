@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour {
     public GameObject storyPanel11A;
     public GameObject storyPanel11B;
 
+    public School[] schools = new School[5];
+
     void Start()
     {
         // sets all panels to false and the beginning panel as true at the start of the game 
@@ -104,6 +106,70 @@ public class GameManager : MonoBehaviour {
                     mustStop = false;
                 }
                 break;
+            case 21:
+                if (mustStop)
+                {
+                    panel3.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 28:
+                if (mustStop)
+                {
+                    panel4.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 35:
+                if (mustStop)
+                {
+                    panel5.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 42:
+                if (mustStop)
+                {
+                    panel6.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 49:
+                if (mustStop)
+                {
+                    panel7.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 56:
+                if (mustStop)
+                {
+                    panel8.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 63:
+                if (mustStop)
+                {
+                    panel9.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 70:
+                if (mustStop)
+                {
+                    panel10.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
             default:
                 mustStop = true;
                 break;
@@ -122,11 +188,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 1");
                     storyPanel2A.SetActive(true);
+                    schools[0].spreadFactor -= 0.25f;
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 1 
                 {
                     Debug.Log("switch second button vraag 1");
                     storyPanel2B.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 break;
 
@@ -136,11 +204,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 2");
                     storyPanel3A.SetActive(true);
+                    changeSpreadFactor(0.2f);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 2
                 {
                     Debug.Log("switch second button vraag 2");
                     storyPanel3B.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 break;
 
@@ -150,11 +220,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 3");
                     storyPanel4A.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 3
                 {
                     Debug.Log("switch second button vraag 3");
                     storyPanel4B.SetActive(true);
+                    changeSpreadFactor(-0.1f);
                 }
                 break;
 
@@ -164,11 +236,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 4");
                     storyPanel5A.SetActive(true);
+                    changeSpreadFactor(-0.1f);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 4
                 {
                     Debug.Log("switch second button vraag 4");
                     storyPanel5B.SetActive(true);
+                    changeSpreadFactor(0.1f);
                 }
 
                 break;
@@ -179,11 +253,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 5");
                     storyPanel6A.SetActive(true);
+                    changeSpreadFactor(0.4f);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 5
                 {
                     Debug.Log("switch second button vraag 5");
                     storyPanel6B.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 
                 break;
@@ -194,11 +270,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 6");
                     storyPanel7A.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 6
                 {
                     Debug.Log("switch second button vraag 6");
                     storyPanel7B.SetActive(true);
+                    changeSpreadFactor(0.2f);
                 }
                 
                 break;
@@ -209,11 +287,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 7");
                     storyPanel8A.SetActive(true);
+                    changeSpreadFactor(0.2f);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 7
                 {
                     Debug.Log("switch second button vraag 7");
                     storyPanel8B.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 
                 break;
@@ -224,11 +304,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 8");
                     storyPanel9A.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 8
                 {
                     Debug.Log("switch second button vraag 8");
                     storyPanel9B.SetActive(true);
+                    changeSpreadFactor(0);
                 }
 
                 break;
@@ -239,11 +321,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 9");
                     storyPanel10A.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 9
                 {
                     Debug.Log("switch second button vraag 9");
                     storyPanel10B.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 
                 break;
@@ -254,11 +338,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 10");
                     storyPanel11A.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 10
                 {
                     Debug.Log("switch second button vraag 10");
                     storyPanel11B.SetActive(true);
+                    changeSpreadFactor(0);
                 }
                 
                 break;
@@ -395,5 +481,13 @@ public class GameManager : MonoBehaviour {
     public void RestartSchools()
     {
         timer.isPaused = false;
+    }
+
+    public void changeSpreadFactor(float initFactorDifference)
+    {
+        for(int i = 0; i < schools.Length; i++)
+        {
+            schools[i].spreadFactor += initFactorDifference;
+        }
     }
 }
