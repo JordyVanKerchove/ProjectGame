@@ -23,6 +23,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 c5349402267ee0e81ad91ec2edd590cd Assembly-CSharp.dll:MaterialUI.RectTransformSnap
 84f80fb71a4d5e92611a04a51cac64f1 Assembly-CSharp.dll:MaterialUI.CheckboxConfig
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.backgroundmusic
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -121,10 +122,11 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 f2386e2dcd5bd5e737791575edc923df Assembly-CSharp.dll:MaterialUI.DialogBoxConfig
+dbdc6a756e714b2a3ace76734cad4fbd Assembly-CSharp.dll:.SettingMenu
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 72797a320f53f8377e1fd51412250d11 Assembly-CSharp.dll:MaterialUI.ButtonInteractableControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.TMP_PhoneNumberValidator
-3de771409b51ac31bb599bc83d131bc7 Assembly-CSharp.dll:.GameManager
+45ebe2a15fac76d17c3c55ac232a86f5 Assembly-CSharp.dll:.GameManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:MaterialUI.Anim
 1eb8d78ef20aae2caff1d178b7db0040 Assembly-CSharp.dll:MaterialUI.ColorCopier
 1957a9369e72d2661ae9d0de26e7d064 Assembly-CSharp.dll:TMPro.Examples.WarpTextExample
@@ -212,7 +214,7 @@ e024402a708ba845635b872ee0cb1f0d Assembly-CSharp.dll:MaterialUI.Toaster
 b8f04bdad423045528c67dfa4c3dca0d Assembly-CSharp.dll:TMPro.Examples.VertexShakeA
 8d9d08018be8a9d20f0bc1d0c8c9e4a7 Assembly-CSharp.dll:MaterialUI.RadioConfig
 f6b2d14398f9d0e36a1c81b49383bfcb Assembly-CSharp.dll:MaterialUI.SpriteSwapper
-727b82f7a822ae7fa8cfb5da74b30b8e Assembly-CSharp.dll:.Counter
+d4eb76a5d473e9c94a8c4be54320b0f4 Assembly-CSharp.dll:.Counter
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -227,7 +229,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-c61d86ca930b7982414c6a0f15fe256f Assembly-CSharp.dll:.Timer
+576c7523eb9eca5b728e85cf057d5a57 Assembly-CSharp.dll:.Timer
 f47ace137b03289594a159745045db66 Assembly-CSharp.dll:MaterialUI.RippleConfig
 62229a3e4d53ca59bec192e89627ed52 Assembly-CSharp.dll:TMPro.Examples.CameraController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -239,6 +241,7 @@ aa9d1bd0cc771545f2ae1f63a6d0ed6a Assembly-CSharp.dll:TMPro.Examples.TMP_TextEven
 eff5f3418691caab368ab13dca6c3c24 Assembly-CSharp.dll:MaterialUI.ScreenManager
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 9952885aee700959fc4782e3a5c98e1b Assembly-CSharp.dll:MaterialUI.FPSCounter
+1f5e5d32a397a14ea2238e622327a549 Assembly-CSharp.dll:.pauseMenu
 523daff429746cb33195d48384c50d86 Assembly-CSharp.dll:MaterialUI.SnapButtonToText
 f0f0ab6b8a39d0572cfa4ea315d84fbf Assembly-CSharp.dll:TMPro.Examples.Benchmark04
 29273f491d11f6bdd02a43a9d8df84c7 Assembly-CSharp.dll:TMPro.Examples.TMP_ExampleScript_01
@@ -248,7 +251,6 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 1cd4893b18ef6c9e1612214d23ea08a3 Assembly-CSharp.dll:.ChatController
-dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.cubeMenu
 6ced5e30b46aade805ee2cd388523322 Assembly-CSharp.dll:MaterialUI.CheckBoxToggler
 855e6c2cc83470f708608120f850e5d7 Assembly-CSharp.dll:MaterialUI.ScreenConfig
 48a9dee325686d1924a2646b71c83f08 Assembly-CSharp.dll:TMPro.Examples.Benchmark01
@@ -268,4 +270,3 @@ a885b5718618457f4959f03284f3d6c2 Assembly-CSharp.dll:MaterialUI.TextInputLine
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
 5ab1677d31916f29db021c86cd24d748 Assembly-CSharp.dll:MaterialUI.MenuArrowAnim
-1f5e5d32a397a14ea2238e622327a549 Assembly-CSharp.dll:.pauseMenu

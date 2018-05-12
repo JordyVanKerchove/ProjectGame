@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MenuButtons : MonoBehaviour {
 
     public GameObject Startmenu;
     public GameObject OptionsMenu;
+
     public void StartGame()
     {
         SceneManager.LoadScene(1);
