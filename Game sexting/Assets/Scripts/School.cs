@@ -13,6 +13,7 @@ public class School : MonoBehaviour {
 
     public float spreadFactor;
     public float tempNbrOfReachedStudents;
+    public float newTempNbrOfStudents;
 
     public School[] otherSchools = new School[4];
     public ushort nbrOfStudents;
@@ -99,11 +100,16 @@ public class School : MonoBehaviour {
     {
         if (nbrOfReachedStudents < nbrOfStudents && isInfected == true)
         {
-            tempNbrOfReachedStudents += (nbrOfReachedStudents / 16);
-            tempNbrOfReachedStudents *= spreadFactor;
+            newTempNbrOfStudents = nbrOfReachedStudents / 20;
+            newTempNbrOfStudents *= spreadFactor;
+            tempNbrOfReachedStudents += newTempNbrOfStudents;
             if(tempNbrOfReachedStudents >= 1)
             {
                 nbrOfReachedStudents += (ushort)Mathf.Round(tempNbrOfReachedStudents);
+            }
+            else
+            {
+                nbrOfReachedStudents++;
             }
 
             if (nbrOfReachedStudents >= nbrOfStudents)
