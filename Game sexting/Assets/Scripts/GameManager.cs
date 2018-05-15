@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour {
     public GameObject panel9;
     public GameObject panel10;
     public GameObject endPanel;
+    public GameObject tipsScherm;
+    public GameObject hulpScherm;
 
     public GameObject storyPanel1;
     public GameObject storyPanel2A;
@@ -469,8 +472,26 @@ public class GameManager : MonoBehaviour {
         storyPanel11A.SetActive(false);
         storyPanel11B.SetActive(false);
 
-        RestartSchools();
+        endPanel.SetActive(true);
+        
         //endPanel.SetActive(true);
+    }
+
+    public void ifEindwoord()
+    {
+        endPanel.SetActive(false);
+        tipsScherm.SetActive(true);
+    }
+
+    public void ifTips()
+    {
+        tipsScherm.SetActive(false);
+        hulpScherm.SetActive(true);
+    }
+
+    public void ifHulpscherm()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void PauseSchools()
