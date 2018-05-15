@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour {
     public GameObject panel9;
     public GameObject panel10;
     public GameObject endPanel;
-    public GameObject tips;
+    public GameObject tipsScherm;
+    public GameObject hulpScherm;
 
     public GameObject storyPanel1;
     public GameObject storyPanel2A;
@@ -479,13 +480,20 @@ public class GameManager : MonoBehaviour {
     public void ifEindwoord()
     {
         endPanel.SetActive(false);
-        tips.SetActive(true);
+        tipsScherm.SetActive(true);
     }
 
     public void ifTips()
     {
+        tipsScherm.SetActive(false);
+        hulpScherm.SetActive(true);
+    }
+
+    public void ifHulpscherm()
+    {
         SceneManager.LoadScene(0);
     }
+
     public void PauseSchools()
     {
         timer.isPaused = true;
