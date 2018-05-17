@@ -8,7 +8,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     public Timer timer;
+    public Counter counter;
     public bool mustStop;
+    ushort dayOnWhichAllReached;
+    ushort totalNbrOfReachedStudents;
+    ushort totalNbrOfStudents;
 
     private bool firstButton = false;
     private bool secondButton = false;
@@ -87,6 +91,10 @@ public class GameManager : MonoBehaviour {
         panel8.SetActive(false);
         panel9.SetActive(false);
         panel10.SetActive(false);
+
+        dayOnWhichAllReached = 0;
+        totalNbrOfReachedStudents = counter.totalNbrOfReachedStudents;
+        totalNbrOfStudents = counter.totalNbrOfStudents;
     }  
 
     void Update()
@@ -152,12 +160,16 @@ public class GameManager : MonoBehaviour {
             case 56:
                 if (mustStop)
                 {
-                    panel8.SetActive(true);
+                    endPanel.SetActive(true);
                     PauseSchools();
                     mustStop = false;
+
+                    /*panel8.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;*/
                 }
                 break;
-            case 63:
+            /*case 63:
                 if (mustStop)
                 {
                     panel9.SetActive(true);
@@ -172,9 +184,31 @@ public class GameManager : MonoBehaviour {
                     PauseSchools();
                     mustStop = false;
                 }
-                break;
+                break;*/
+            /*case 77:
+                {
+                    endPanel.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;*/
             default:
                 mustStop = true;
+
+                totalNbrOfReachedStudents = counter.totalNbrOfReachedStudents;
+
+                if (totalNbrOfStudents == totalNbrOfReachedStudents)
+                {
+                    if (dayOnWhichAllReached != 0)
+                    {
+                        dayOnWhichAllReached = timer.nbrOfDays;
+                    }
+                    if (timer.nbrOfDays - dayOnWhichAllReached >= 7)
+                    {
+                        endPanel.SetActive(true);
+                        PauseSchools();
+                    }
+                }
                 break;
         }
     }
@@ -471,8 +505,6 @@ public class GameManager : MonoBehaviour {
     {
         storyPanel11A.SetActive(false);
         storyPanel11B.SetActive(false);
-
-        endPanel.SetActive(true);
         
         //endPanel.SetActive(true);
     }
@@ -481,12 +513,16 @@ public class GameManager : MonoBehaviour {
     {
         endPanel.SetActive(false);
         tipsScherm.SetActive(true);
+
+        RestartSchools();
     }
 
     public void ifTips()
     {
         tipsScherm.SetActive(false);
         hulpScherm.SetActive(true);
+
+        RestartSchools();
     }
 
     public void ifHulpscherm()

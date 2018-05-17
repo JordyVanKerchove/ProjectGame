@@ -42,7 +42,7 @@ public class Timer : MonoBehaviour {
         coRoutineIsRunning = true;
         //for (int i = 0; i < 500; i++)
         {
-            Debug.Log(isPaused);
+            //Debug.Log(isPaused);
             if (!isPaused)
             {
                 UpdateUI();
