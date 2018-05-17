@@ -1,4 +1,4 @@
-WindowsStandalone
+WebGL
 SceneListBegin?
 Assets/Scenes/TitleScreen.unity
 Assets/Scenes/MainScene.unity
@@ -214,7 +214,7 @@ e024402a708ba845635b872ee0cb1f0d Assembly-CSharp.dll:MaterialUI.Toaster
 b8f04bdad423045528c67dfa4c3dca0d Assembly-CSharp.dll:TMPro.Examples.VertexShakeA
 8d9d08018be8a9d20f0bc1d0c8c9e4a7 Assembly-CSharp.dll:MaterialUI.RadioConfig
 f6b2d14398f9d0e36a1c81b49383bfcb Assembly-CSharp.dll:MaterialUI.SpriteSwapper
-d712473bfb8422b1ca28fa901e428baf Assembly-CSharp.dll:.Counter
+d8a548f61ccb65e837850c150e50f378 Assembly-CSharp.dll:.Counter
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
