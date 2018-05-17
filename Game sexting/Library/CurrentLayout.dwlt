@@ -109,7 +109,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 94
+=======
+  controlID: 9
+>>>>>>> 3410c1b27dbe3fd9db38ed29df1deff4be1d282a
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +137,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 108
+=======
+  controlID: 10
+>>>>>>> 3410c1b27dbe3fd9db38ed29df1deff4be1d282a
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +165,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 109
+=======
+  controlID: 11
+>>>>>>> 3410c1b27dbe3fd9db38ed29df1deff4be1d282a
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,8 +186,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 327
     height: 472
+=======
+    width: 235
+    height: 460
+>>>>>>> 3410c1b27dbe3fd9db38ed29df1deff4be1d282a
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
@@ -369,7 +386,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0cfbfdff7440feffa0d4feff1ad5feff28d7feff32d7feff442affffba2affffc82cffffd22cffff8e34ffff0635ffff1437ffff1e37ffffd047ffff4848ffff564affff604affff904effff4c4fffff5a51ffff6451ffff6c67ffff1468ffff226affff2c6affffd670ffff4e71ffff5c73ffff6673ffff5e76ffffd676ffffe478ffffee78ffff3a7cffffb27cffffc07effffca7effff5a8affffd28affffe08cffffea8cffffc890ffff4091ffff4e93ffff5893ffff4e9affff24a0ffffe0a0ffffc6a2ffffe0a2ffffbaccffff5acdffff3ccfffff52cfffffe8d7ffff90d8ffff76daffff90dafffffaf5ffff7af6ffff5cf8ffff72f8ffff8afafffff4ffffff00000000c4ff0300
+=======
+    m_ExpandedIDs: 98fbffff00000000
+>>>>>>> 3410c1b27dbe3fd9db38ed29df1deff4be1d282a
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -544,10 +565,17 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\jorre\Documents\GitHub\ProjectGame\Game sexting
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: dc2d0000
     m_LastClickedID: 11740
     m_ExpandedIDs: 00000000dc2d0000fa2f0000ffffff7f
+=======
+    scrollPos: {x: 0, y: 43}
+    m_SelectedIDs: 52290000
+    m_LastClickedID: 10578
+    m_ExpandedIDs: 00000000d8280000fc2a000000ca9a3bffffff7f
+>>>>>>> 3410c1b27dbe3fd9db38ed29df1deff4be1d282a
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: materials
@@ -575,7 +603,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000dc2d0000fa2f0000
+=======
+    m_ExpandedIDs: 00000000d8280000fc2a0000
+>>>>>>> 3410c1b27dbe3fd9db38ed29df1deff4be1d282a
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
