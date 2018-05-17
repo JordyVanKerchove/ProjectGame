@@ -1238,9 +1238,10 @@ GameObject:
   m_Component:
   - component: {fileID: 920278296}
   - component: {fileID: 920278297}
+  - component: {fileID: 920278298}
   m_Layer: 5
   m_Name: muziek slider
-  m_TagString: Untagged
+  m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1325,6 +1326,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &920278298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 920278295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a85dc1446d3fe48af169c5b1871519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &942378878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,7 +2065,7 @@ GameObject:
   - component: {fileID: 1244166284}
   m_Layer: 0
   m_Name: Button Click prefab
-  m_TagString: Untagged
+  m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2186,9 +2198,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1261921516}
   - component: {fileID: 1261921517}
+  - component: {fileID: 1261921518}
   m_Layer: 5
   m_Name: Geluidseffecten slider
-  m_TagString: Untagged
+  m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2273,6 +2286,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1261921518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1261921515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a85dc1446d3fe48af169c5b1871519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1266214914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,7 +2533,7 @@ GameObject:
   - component: {fileID: 1589124894}
   m_Layer: 0
   m_Name: SoundManager
-  m_TagString: Untagged
+  m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
