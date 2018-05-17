@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class backgroundmusic : MonoBehaviour {
 
-    private void Awake()
+   
+    void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+     
+            DontDestroyOnLoad(this.gameObject);
+      
     }
 }
