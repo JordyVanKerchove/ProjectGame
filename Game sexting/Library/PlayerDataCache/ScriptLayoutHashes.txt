@@ -1,4 +1,4 @@
-WebGL
+WindowsStandalone
 SceneListBegin?
 Assets/Scenes/TitleScreen.unity
 Assets/Scenes/MainScene.unity
@@ -126,7 +126,7 @@ dbdc6a756e714b2a3ace76734cad4fbd Assembly-CSharp.dll:.SettingMenu
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 72797a320f53f8377e1fd51412250d11 Assembly-CSharp.dll:MaterialUI.ButtonInteractableControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.TMP_PhoneNumberValidator
-18e48c0cfe7d8b5851de8ee6d008ceed Assembly-CSharp.dll:.GameManager
+6e42b927d72729396dc22b4cb5fc31ab Assembly-CSharp.dll:.GameManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:MaterialUI.Anim
 1eb8d78ef20aae2caff1d178b7db0040 Assembly-CSharp.dll:MaterialUI.ColorCopier
 1957a9369e72d2661ae9d0de26e7d064 Assembly-CSharp.dll:TMPro.Examples.WarpTextExample
@@ -214,7 +214,7 @@ e024402a708ba845635b872ee0cb1f0d Assembly-CSharp.dll:MaterialUI.Toaster
 b8f04bdad423045528c67dfa4c3dca0d Assembly-CSharp.dll:TMPro.Examples.VertexShakeA
 8d9d08018be8a9d20f0bc1d0c8c9e4a7 Assembly-CSharp.dll:MaterialUI.RadioConfig
 f6b2d14398f9d0e36a1c81b49383bfcb Assembly-CSharp.dll:MaterialUI.SpriteSwapper
-d8a548f61ccb65e837850c150e50f378 Assembly-CSharp.dll:.Counter
+6c0eed093bc88b896c10df3c6e6a173a Assembly-CSharp.dll:.Counter
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
