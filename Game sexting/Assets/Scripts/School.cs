@@ -22,7 +22,7 @@ public class School : MonoBehaviour {
 
     void start()
     {
-        orange = new Color(0.2F, 0.3F, 0.4F);
+        orange = new Color(0.2F, 0.3F, 0.4F, 1);
         isInfected = false;
         nbrOfReachedStudents = 0;
         spreadFactor = 1;
@@ -40,14 +40,15 @@ public class School : MonoBehaviour {
     {
         schoolColor = new Color();
         float percentage = CalculatePercentage();
+        float tempPercentage = 0;
 
         if (!isInfected)
         {
-            currentColor = (byte)colors.Grey; //If the school isn't effected it get's the color grey
+            schoolColor = new Color(0.5F, 0.5F, 0.5F); //If the school isn't effected it get's the color grey
         }
         else
         {
-            if(percentage <= 0.33)
+            /*if(percentage <= 0.33) // methoder 1
             {
                 currentColor = (byte)colors.Green;
             }
@@ -58,6 +59,27 @@ public class School : MonoBehaviour {
             else
             {
                 currentColor = (byte)colors.Red;
+            }*/
+
+            /*if(percentage < 0.5) // methoder 2
+            {
+                schoolColor = new Color(0 + percentage * 4, 1 - percentage * 14, 0 + percentage * 8);
+            }
+            else
+            {
+                schoolColor = new Color(0.2F + (percentage - 0.5F) * 16, 0.3F - (percentage - 0.5f) * 6, 0.4F - (percentage - 0.5F) * 8);
+            }*/
+
+            // methoder 3
+            if (percentage < 0.5)
+            {
+                tempPercentage = percentage * 2;
+                schoolColor = Color.Lerp(new Color(0, 1, 0, 1), new Color(1, 0.5F, 0, 1), tempPercentage);
+            }
+            else
+            {
+                tempPercentage = (percentage - 0.5F) * 2;
+                schoolColor = Color.Lerp(new Color(1, 0.5F, 0, 1), new Color(1, 0, 0, 1),tempPercentage);
             }
         }
         //Debug.Log(currentColor);
@@ -66,7 +88,7 @@ public class School : MonoBehaviour {
 
     public void ChangeColor()
     {
-         switch(currentColor)
+         /*switch(currentColor)
         {
             case 0:
                 schoolColor = Color.gray;
@@ -85,7 +107,7 @@ public class School : MonoBehaviour {
                 break;
             default:
                 break;
-        }
+        }*/
         gameObject.GetComponent<SpriteRenderer>().color = schoolColor;
     }
 
