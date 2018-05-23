@@ -7,8 +7,12 @@ public class backgroundmusic : MonoBehaviour {
    
     void Awake()
     {
-     
-            DontDestroyOnLoad(this.gameObject);
-      
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("music");
+        if (objs.Length>2)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 }
