@@ -5,7 +5,10 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - musicVolume: {fileID: 24100000, guid: 8af6c7bc67538d34388c183c52e3747e, type: 2}
+  - soundEffectsVolume: {fileID: 24100000, guid: 1965d0663bd63064598b2021e24ff62f,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
