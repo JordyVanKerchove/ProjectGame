@@ -1,4 +1,4 @@
-WindowsStandalone
+WebGL
 SceneListBegin?
 Assets/Scenes/TitleScreen.unity
 Assets/Scenes/MainScene.unity
@@ -22,6 +22,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 c5349402267ee0e81ad91ec2edd590cd Assembly-CSharp.dll:MaterialUI.RectTransformSnap
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.buttonMusic
 84f80fb71a4d5e92611a04a51cac64f1 Assembly-CSharp.dll:MaterialUI.CheckboxConfig
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.backgroundmusic
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -126,7 +127,7 @@ dbdc6a756e714b2a3ace76734cad4fbd Assembly-CSharp.dll:.SettingMenu
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 72797a320f53f8377e1fd51412250d11 Assembly-CSharp.dll:MaterialUI.ButtonInteractableControl
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.TMP_PhoneNumberValidator
-18e48c0cfe7d8b5851de8ee6d008ceed Assembly-CSharp.dll:.GameManager
+399847bfc615c13cb30d61877965dd37 Assembly-CSharp.dll:.GameManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:MaterialUI.Anim
 1eb8d78ef20aae2caff1d178b7db0040 Assembly-CSharp.dll:MaterialUI.ColorCopier
 1957a9369e72d2661ae9d0de26e7d064 Assembly-CSharp.dll:TMPro.Examples.WarpTextExample
