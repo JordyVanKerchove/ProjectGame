@@ -4329,12 +4329,12 @@ SpriteRenderer:
   m_SortingLayerID: 59981413
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 79a251599d935c145a2e589cc5502587, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ca4fc835e2378b4fa5a5abcd354dc55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.77, y: 3.29}
+  m_Size: {x: 3.17, y: 3.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5213,7 +5213,7 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 152015940}
+  - component: {fileID: 152015941}
   - component: {fileID: 152015939}
   - component: {fileID: 152015938}
   m_Layer: 0
@@ -5280,29 +5280,34 @@ SpriteRenderer:
   m_SortingLayerID: 59981413
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 79a251599d935c145a2e589cc5502587, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ca4fc835e2378b4fa5a5abcd354dc55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.77, y: 3.29}
+  m_Size: {x: 3.17, y: 3.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!4 &152015940
-Transform:
+--- !u!224 &152015941
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 152015937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.1, y: 19.6, z: 100}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 2.7758195, y: 2.7201023, z: 1.7442123}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -9.1, y: 19.6}
+  m_SizeDelta: {x: 2.77, y: 3.29}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &152387131
 GameObject:
   m_ObjectHideFlags: 0
@@ -8092,6 +8097,7 @@ MonoBehaviour:
   nbrOfDaysAfterReachedAll: 0
   dayIsSet: 0
   mustStop: 0
+  gameEnded: 0
   panel1: {fileID: 771405730}
   panel2: {fileID: 1750966321}
   panel3: {fileID: 1789649774}
@@ -27944,12 +27950,12 @@ SpriteRenderer:
   m_SortingLayerID: 59981413
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 79a251599d935c145a2e589cc5502587, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ca4fc835e2378b4fa5a5abcd354dc55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.77, y: 3.29}
+  m_Size: {x: 3.17, y: 3.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -33054,12 +33060,12 @@ SpriteRenderer:
   m_SortingLayerID: 59981413
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 79a251599d935c145a2e589cc5502587, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ca4fc835e2378b4fa5a5abcd354dc55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.77, y: 3.29}
+  m_Size: {x: 3.17, y: 3.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -45594,6 +45600,7 @@ MonoBehaviour:
   - {fileID: 1981086417}
   - {fileID: 106271676}
   - {fileID: 1410064056}
+  gm: {fileID: 308641315}
   UITimer: {fileID: 935946542}
   nbrOfDays: 0
   isPaused: 0
@@ -46257,12 +46264,12 @@ SpriteRenderer:
   m_SortingLayerID: 59981413
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 79a251599d935c145a2e589cc5502587, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ca4fc835e2378b4fa5a5abcd354dc55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.77, y: 3.29}
+  m_Size: {x: 3.17, y: 3.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

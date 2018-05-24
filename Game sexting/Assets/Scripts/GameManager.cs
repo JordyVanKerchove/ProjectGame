@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     public ushort nbrOfDaysAfterReachedAll;
     public bool dayIsSet;
     public bool mustStop;
+    public bool gameEnded;
 
     private bool firstButton = false;
     private bool secondButton = false;
@@ -92,6 +93,7 @@ public class GameManager : MonoBehaviour {
         panel10.SetActive(false);
 
         dayIsSet = false;
+        gameEnded = false;
     }  
 
     void Update()
@@ -110,7 +112,7 @@ public class GameManager : MonoBehaviour {
             {
                 //Debug.Log("count");
                 endPanel.SetActive(true);
-                PauseSchools();
+                //PauseSchools();
             }
         }
 
@@ -200,8 +202,9 @@ public class GameManager : MonoBehaviour {
                 if (mustStop)
                 {
                     endPanel.SetActive(true);
-                    PauseSchools();
+                    //PauseSchools();
                     mustStop = false;
+                    gameEnded = true;
                 }
                 break;
             default:
