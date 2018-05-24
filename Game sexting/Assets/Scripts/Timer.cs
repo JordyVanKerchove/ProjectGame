@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
 
-    public School[] schools = new School[5]; 
+    public School[] schools = new School[5];
+    public GameManager gm;
 
     DateTime startDate;
     DateTime currentDate;
@@ -40,7 +41,7 @@ public class Timer : MonoBehaviour {
     IEnumerator Sleep1Sec()
     {
         coRoutineIsRunning = true;
-        //for (int i = 0; i < 500; i++)
+        if (!gm.gameEnded)
         {
             Debug.Log(isPaused);
             if (!isPaused)
