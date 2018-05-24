@@ -2061,7 +2061,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1244166286}
   - component: {fileID: 1244166283}
-  - component: {fileID: 1244166284}
   m_Layer: 0
   m_Name: Button Click prefab
   m_TagString: music
@@ -2151,17 +2150,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1244166284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244166282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63a85dc1446d3fe48af169c5b1871519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1244166286
 Transform:
   m_ObjectHideFlags: 0
