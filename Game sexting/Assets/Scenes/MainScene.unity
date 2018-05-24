@@ -8088,6 +8088,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1960630652}
+  counter: {fileID: 1065469814}
+  nbrOfDaysAfterReachedAll: 0
+  dayIsSet: 0
   mustStop: 0
   panel1: {fileID: 771405730}
   panel2: {fileID: 1750966321}
@@ -8730,7 +8733,6 @@ GameObject:
   - component: {fileID: 344968074}
   - component: {fileID: 344968073}
   - component: {fileID: 344968072}
-  - component: {fileID: 344968071}
   m_Layer: 5
   m_Name: Mini Counters
   m_TagString: Untagged
@@ -8761,33 +8763,6 @@ RectTransform:
   m_AnchoredPosition: {x: 35, y: -100}
   m_SizeDelta: {x: 70, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &344968071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 344968069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31db5c79076f6f7449d6bb253540aced, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  schools:
-  - {fileID: 152015938}
-  - {fileID: 1238282525}
-  - {fileID: 1981086417}
-  - {fileID: 106271676}
-  - {fileID: 1410064056}
-  UICounter: {fileID: 1067468475}
-  UIMiniCounters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  totalNbrOfReachedStudents: 0
-  totalNbrOfStudents: 0
-  totalPercent: 0
 --- !u!114 &344968072
 MonoBehaviour:
   m_ObjectHideFlags: 0
