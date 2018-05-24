@@ -8,6 +8,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     public Timer timer;
+    public Counter counter;
+    public ushort nbrOfDaysAfterReachedAll;
+    public bool dayIsSet;
     public bool mustStop;
 
     private bool firstButton = false;
@@ -87,10 +90,30 @@ public class GameManager : MonoBehaviour {
         panel8.SetActive(false);
         panel9.SetActive(false);
         panel10.SetActive(false);
+
+        dayIsSet = false;
     }  
 
     void Update()
     {
+        if (counter.totalPercent == 100)
+        {
+            //Debug.Log("100");
+            if (dayIsSet == false)
+            {
+                nbrOfDaysAfterReachedAll = timer.nbrOfDays;
+                //Debug.Log("set");
+                dayIsSet = true;
+            }
+
+            if(nbrOfDaysAfterReachedAll == timer.nbrOfDays - 7)
+            {
+                //Debug.Log("count");
+                endPanel.SetActive(true);
+                PauseSchools();
+            }
+        }
+
         switch (timer.nbrOfDays)
         {
             case 7:
@@ -169,6 +192,14 @@ public class GameManager : MonoBehaviour {
                 if (mustStop)
                 {
                     panel10.SetActive(true);
+                    PauseSchools();
+                    mustStop = false;
+                }
+                break;
+            case 77:
+                if (mustStop)
+                {
+                    endPanel.SetActive(true);
                     PauseSchools();
                     mustStop = false;
                 }
@@ -472,8 +503,7 @@ public class GameManager : MonoBehaviour {
         storyPanel11A.SetActive(false);
         storyPanel11B.SetActive(false);
 
-        endPanel.SetActive(true);
-        
+        RestartSchools();
         //endPanel.SetActive(true);
     }
 

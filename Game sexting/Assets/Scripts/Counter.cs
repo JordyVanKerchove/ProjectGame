@@ -17,6 +17,7 @@ public class Counter : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+
         totalPercent = 0;
         totalNbrOfStudents = 0;
 
@@ -37,7 +38,7 @@ public class Counter : MonoBehaviour {
             tempPercent = schools[i].nbrOfReachedStudents * 100;
             tempPercent /= schools[i].nbrOfStudents;
             tempPercent = (float)Math.Round(tempPercent);
-            UIMiniCounters[i].text = tempPercent + "%";
+            UIMiniCounters[i].text = tempPercent.ToString() + "%";
         }
         totalPercent = totalNbrOfReachedStudents * 100;
         totalPercent /= totalNbrOfStudents;
