@@ -8089,6 +8089,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 1960630652}
   counter: {fileID: 1065469814}
+  nbrOfDaysAfterReachedAll: 0
+  dayIsSet: 0
   mustStop: 0
   panel1: {fileID: 771405730}
   panel2: {fileID: 1750966321}
@@ -8761,36 +8763,6 @@ RectTransform:
   m_AnchoredPosition: {x: 35, y: -100}
   m_SizeDelta: {x: 70, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
---- !u!114 &344968071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 344968069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31db5c79076f6f7449d6bb253540aced, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  schools:
-  - {fileID: 152015938}
-  - {fileID: 1238282525}
-  - {fileID: 1981086417}
-  - {fileID: 106271676}
-  - {fileID: 1410064056}
-  UICounter: {fileID: 1067468475}
-  UIMiniCounters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  totalNbrOfReachedStudents: 0
-  totalNbrOfStudents: 0
-  totalPercent: 0
-=======
->>>>>>> 19139e3776eee6b917bd218c344d0a1e9cf98701
 --- !u!114 &344968072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12877,18 +12849,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "ENKELE TIPS OM JEZELF BETER TE BEVEILIGEN:\n- Je operating system up to
-    date houden. (Windows, Android, Mac OS X, IOS, ...)\r\n- Beveiligingsprogramma\u2019s
-    up to date houden\r.\n- Geen openbare wi-fi gebruiken\r.\n- Alle persoonlijke
-    gegevens verwijderen van uw device bij het doorverkopen\r van uw apparaat.\n-
-    Maak moeilijke paswoorden, verander ze regelmatig en gebruik niet steeds hetzelfde
-    wachtwoord.\r\n- Gevoelige data niet in een online cloud zetten.\r\n- Accounts
-    niet linken. Bv: wanneer een website vraagd om je in te schrijven met je facebook
-    account, geef je een enorme hoeveelheid informatie van jezelf weg.\n- Kijk na
-    of een website dat je bezoekt beveiligd is met https. Dit zorgt ervoor dat hackers
-    uw priv\xE9 informatie niet kunnen ontcijferen.\n- Geef bij installatie van nieuwe
-    apps niet de toestemming naar het geven van onnodige informatie.\nZo zal bijvoorbeeld
-    een kook app niet je contactgegevens nodig hebben.\r"
+  m_Text: "ENKELE TIPS OM JEZELF BETER TE BEVEILIGEN:\n- Je OS up to date houden.
+    (Windows, Android, Mac OS X, IOS, ...)\r\n- Beveiligings programma\u2019s up to
+    date houden\r.\n- Geen openbare wi-fi gebruiken\r.\n- Alle persoonlijke gegevens
+    verwijderen van uw device bij het doorverkopen\r van uw apparaat.\n- Maak moeilijke
+    paswoorden, verander ze regelmatig en gebruik niet steeds hetzelfde wachtwoord.\r\n-
+    Gevoelige data niet in een online cloud zetten.\r\n- Accounts niet linken. Bv:
+    wanneer een website vraagd om je in te schrijven met je facebook account, geef
+    je een enorme hoeveelheid informatie van jezelf weg.\n- Kijk na of een website
+    dat je bezoekt beveiligd is met https. Dit zorgt ervoor dat hackers uw priv\xE9
+    informatie niet kunnen ontcijferen.\n- Geef bij installatie van nieuwe apps niet
+    de toestemming naar het geven van onnodige informatie.\nZo zal bijvoorbeeld een
+    kook app niet je contactgegevens nodig hebben.\r"
 --- !u!222 &538973185
 CanvasRenderer:
   m_ObjectHideFlags: 0
