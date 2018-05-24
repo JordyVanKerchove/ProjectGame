@@ -7,7 +7,7 @@ public class School : MonoBehaviour {
     public enum colors {Grey, Green, Orange, Red};
     public byte currentColor;
     Color schoolColor;
-    Color orange;
+    //Color orange;
 
     float percentage;
 
@@ -22,7 +22,7 @@ public class School : MonoBehaviour {
 
     void start()
     {
-        orange = new Color(0.2F, 0.3F, 0.4F, 1);
+        //orange = new Color(0.2F, 0.3F, 0.4F, 1);
         isInfected = false;
         nbrOfReachedStudents = 0;
         spreadFactor = 1;
