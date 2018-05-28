@@ -8437,11 +8437,11 @@ MonoBehaviour:
   storyPanel11A: {fileID: 1084390482}
   storyPanel11B: {fileID: 1707250419}
   schools:
-  - {fileID: 152015938}
-  - {fileID: 1238282525}
-  - {fileID: 1981086417}
-  - {fileID: 106271676}
-  - {fileID: 1410064056}
+  - {fileID: 1338119544}
+  - {fileID: 1692191815}
+  - {fileID: 1553675064}
+  - {fileID: 0}
+  - {fileID: 850304969}
 --- !u!4 &308641316
 Transform:
   m_ObjectHideFlags: 0
@@ -10203,8 +10203,8 @@ RectTransform:
   m_Father: {fileID: 1903687181}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.6}
-  m_AnchorMax: {x: 0.5, y: 0.6}
+  m_AnchorMin: {x: 0.5, y: 0.75}
+  m_AnchorMax: {x: 0.5, y: 0.75}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12236,6 +12236,7 @@ GameObject:
   - component: {fileID: 461162461}
   - component: {fileID: 461162460}
   - component: {fileID: 461162459}
+  - component: {fileID: 461162463}
   m_Layer: 5
   m_Name: PanelLayer D
   m_TagString: MaterialButtonLayer
@@ -12308,6 +12309,50 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461162457}
+--- !u!212 &461162463
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461162457}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 9ca4fc835e2378b4fa5a5abcd354dc55, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.17, y: 3.73}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &475383680
 GameObject:
   m_ObjectHideFlags: 0
@@ -12537,7 +12582,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'VRAAG 8:'
+  m_Text: Op straat wordt je nageroepen door onbekenden. Het is duidelijk dat ze je
+    herkennen van je foto. Wat doe je?
 --- !u!222 &477770467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20880,6 +20926,7 @@ GameObject:
   - component: {fileID: 850304968}
   - component: {fileID: 850304967}
   - component: {fileID: 850304966}
+  - component: {fileID: 850304969}
   m_Layer: 5
   m_Name: PanelLayer E
   m_TagString: MaterialButtonLayer
@@ -20952,6 +20999,29 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 850304964}
+--- !u!114 &850304969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 850304964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c650244f907aeae4b91ea6b986fb692b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColor: 0
+  spreadFactor: 1
+  tempNbrOfReachedStudents: 0
+  newTempNbrOfStudents: 0
+  otherSchools:
+  - {fileID: 1338119544}
+  - {fileID: 1692191815}
+  - {fileID: 1553675064}
+  - {fileID: 0}
+  nbrOfStudents: 100
+  nbrOfReachedStudents: 0
+  isInfected: 0
 --- !u!1 &853105008
 GameObject:
   m_ObjectHideFlags: 0
@@ -21762,7 +21832,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 98.948105, y: 39.05846}
+  m_SizeDelta: {x: 565.0458, y: 39.05846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890400987
 MonoBehaviour:
@@ -21809,7 +21879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Je ontkent dat jij het bent en loopt door.
 --- !u!222 &890400989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22540,8 +22610,8 @@ RectTransform:
   m_Father: {fileID: 1903687181}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.4}
-  m_AnchorMax: {x: 0.5, y: 0.4}
+  m_AnchorMin: {x: 0.5, y: 0.45}
+  m_AnchorMax: {x: 0.5, y: 0.45}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23421,7 +23491,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'VERHAAL 9:'
+  m_Text: Terwijl je wegwandelt hoor je de personen die je nariepen nog met je lachen.
+    Vor de rest hoor je van hun niets meer.
 --- !u!222 &951069546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25910,11 +25981,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   schools:
-  - {fileID: 152015938}
-  - {fileID: 1238282525}
-  - {fileID: 1981086417}
-  - {fileID: 106271676}
-  - {fileID: 1410064056}
+  - {fileID: 1338119544}
+  - {fileID: 1692191815}
+  - {fileID: 1553675064}
+  - {fileID: 0}
+  - {fileID: 850304969}
   UICounter: {fileID: 1190677182}
   UIMiniCounters:
   - {fileID: 1067468475}
@@ -32183,6 +32254,7 @@ GameObject:
   - component: {fileID: 1338119543}
   - component: {fileID: 1338119542}
   - component: {fileID: 1338119541}
+  - component: {fileID: 1338119544}
   m_Layer: 5
   m_Name: PanelLayer A
   m_TagString: MaterialButtonLayer
@@ -32255,6 +32327,29 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1338119539}
+--- !u!114 &1338119544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338119539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c650244f907aeae4b91ea6b986fb692b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColor: 0
+  spreadFactor: 1
+  tempNbrOfReachedStudents: 1
+  newTempNbrOfStudents: 0
+  otherSchools:
+  - {fileID: 1692191815}
+  - {fileID: 1553675064}
+  - {fileID: 0}
+  - {fileID: 850304969}
+  nbrOfStudents: 100
+  nbrOfReachedStudents: 1
+  isInfected: 1
 --- !u!1 &1340362922
 GameObject:
   m_ObjectHideFlags: 0
@@ -37590,7 +37685,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'VERHAAL 9:'
+  m_Text: De stevige woordwisseling trekt de aandacht van enkele voorbijgangen. Een
+    van de personen die je nariepen begint mensen die er op staan te kijken en mensen
+    die de ruzie proberen te middelen de foto te tonen.
 --- !u!222 &1491721491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38985,6 +39082,7 @@ GameObject:
   - component: {fileID: 1553675063}
   - component: {fileID: 1553675062}
   - component: {fileID: 1553675061}
+  - component: {fileID: 1553675064}
   m_Layer: 5
   m_Name: PanelLayer C
   m_TagString: MaterialButtonLayer
@@ -39057,6 +39155,29 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1553675059}
+--- !u!114 &1553675064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1553675059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c650244f907aeae4b91ea6b986fb692b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColor: 0
+  spreadFactor: 1
+  tempNbrOfReachedStudents: 0
+  newTempNbrOfStudents: 0
+  otherSchools:
+  - {fileID: 1338119544}
+  - {fileID: 1692191815}
+  - {fileID: 0}
+  - {fileID: 850304969}
+  nbrOfStudents: 100
+  nbrOfReachedStudents: 0
+  isInfected: 0
 --- !u!1 &1556161103
 GameObject:
   m_ObjectHideFlags: 0
@@ -41906,6 +42027,7 @@ GameObject:
   - component: {fileID: 1692191814}
   - component: {fileID: 1692191813}
   - component: {fileID: 1692191812}
+  - component: {fileID: 1692191815}
   m_Layer: 5
   m_Name: PanelLayer B
   m_TagString: MaterialButtonLayer
@@ -41978,6 +42100,29 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1692191810}
+--- !u!114 &1692191815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692191810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c650244f907aeae4b91ea6b986fb692b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColor: 0
+  spreadFactor: 1
+  tempNbrOfReachedStudents: 0
+  newTempNbrOfStudents: 0
+  otherSchools:
+  - {fileID: 1338119544}
+  - {fileID: 1553675064}
+  - {fileID: 0}
+  - {fileID: 850304969}
+  nbrOfStudents: 100
+  nbrOfReachedStudents: 0
+  isInfected: 0
 --- !u!1 &1693948318
 GameObject:
   m_ObjectHideFlags: 0
@@ -48154,11 +48299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   schools:
-  - {fileID: 152015938}
-  - {fileID: 1238282525}
-  - {fileID: 1981086417}
-  - {fileID: 106271676}
-  - {fileID: 1410064056}
+  - {fileID: 1338119544}
+  - {fileID: 1692191815}
+  - {fileID: 1553675064}
+  - {fileID: 0}
+  - {fileID: 850304969}
   gm: {fileID: 308641315}
   UITimer: {fileID: 935946542}
   nbrOfDays: 0
@@ -49029,7 +49174,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 98.948105, y: 39.05846}
+  m_SizeDelta: {x: 387.9807, y: 39.05846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012460127
 MonoBehaviour:
@@ -49076,7 +49221,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Je roept beledigingen terug.
 --- !u!222 &2012460129
 CanvasRenderer:
   m_ObjectHideFlags: 0

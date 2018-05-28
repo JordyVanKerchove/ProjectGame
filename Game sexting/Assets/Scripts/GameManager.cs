@@ -225,7 +225,7 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 1");
                     storyPanel2A.SetActive(true);
-                    schools[0].spreadFactor -= 0.25f;
+                    changeSpreadFactor(-0.25F, 0);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 1 
                 {
@@ -324,7 +324,7 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 7");
                     storyPanel8A.SetActive(true);
-                    changeSpreadFactor(0.2f);
+                    changeSpreadFactor(0.2f, 1);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 7
                 {
@@ -347,7 +347,7 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch second button vraag 8");
                     storyPanel9B.SetActive(true);
-                    changeSpreadFactor(0);
+                    changeSpreadFactor(0.1F);
                 }
 
                 break;
@@ -543,5 +543,10 @@ public class GameManager : MonoBehaviour {
         {
             schools[i].spreadFactor += initFactorDifference;
         }
+    }
+
+    public void changeSpreadFactor(float initFactorDifference, byte schoolNbr)
+    {
+        schools[schoolNbr].spreadFactor += initFactorDifference;
     }
 }
