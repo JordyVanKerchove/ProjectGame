@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class School : MonoBehaviour {
 
@@ -108,7 +109,7 @@ public class School : MonoBehaviour {
             default:
                 break;
         }*/
-        gameObject.GetComponent<SpriteRenderer>().color = schoolColor;
+        gameObject.GetComponent<Image>().color = schoolColor;
     }
 
     public float CalculatePercentage()
