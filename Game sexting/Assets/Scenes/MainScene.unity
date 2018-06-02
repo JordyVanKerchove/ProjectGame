@@ -2344,7 +2344,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -2824,7 +2824,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -3348,7 +3348,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -6019,7 +6019,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -9417,7 +9417,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -11135,7 +11135,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -12404,7 +12404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Op straat wordt je nageroepen door onbekenden. Het is duidelijk dat ze je
+  m_Text: Op straat word je nageroepen door onbekenden. Het is duidelijk dat ze je
     herkennen van je foto. Wat doe je?
 --- !u!222 &477770467
 CanvasRenderer:
@@ -14407,7 +14407,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -14993,7 +14993,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -18129,7 +18129,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -19593,7 +19593,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -21322,7 +21322,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -23143,7 +23143,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Terwijl je wegwandelt hoor je de personen die je nariepen nog met je lachen.
-    Vor de rest hoor je van hun niets meer.
+    Voor de rest hoor je niets meer van hun.
 --- !u!222 &951069546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28010,7 +28010,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -29276,7 +29276,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -29582,7 +29582,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -35070,7 +35070,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -36784,9 +36784,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: De stevige woordwisseling trekt de aandacht van enkele voorbijgangen. Een
+  m_Text: De stevige woordwisseling trekt de aandacht van enkele voorbijgangers. Een
     van de personen die je nariepen begint mensen die er op staan te kijken en mensen
-    die de ruzie proberen te middelen de foto te tonen.
+    die de ruzie proberen te bemiddelen de foto te tonen.
 --- !u!222 &1491721491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39482,7 +39482,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -41171,7 +41171,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -41806,7 +41806,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -46343,7 +46343,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -46767,7 +46767,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -48173,7 +48173,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
