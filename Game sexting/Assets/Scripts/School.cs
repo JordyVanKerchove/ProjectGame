@@ -121,6 +121,10 @@ public class School : MonoBehaviour {
 
     public void Spread()
     {
+        if (spreadFactor < 0)
+        {
+            spreadFactor = 0;
+        }
         if (nbrOfReachedStudents < nbrOfStudents && isInfected == true)
         {
             newTempNbrOfStudents = nbrOfReachedStudents / 30;
