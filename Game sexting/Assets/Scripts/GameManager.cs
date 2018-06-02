@@ -518,14 +518,9 @@ public class GameManager : MonoBehaviour {
 
     public void ifTips()
     {
-        tipsScherm.SetActive(false);
-        hulpScherm.SetActive(true);
-    }
-
-    public void ifHulpscherm()
-    {
         SceneManager.LoadScene(0);
     }
+
 
     public void PauseSchools()
     {
