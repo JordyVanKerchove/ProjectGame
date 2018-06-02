@@ -358,13 +358,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 9");
                     storyPanel10A.SetActive(true);
-                    changeSpreadFactor(0);
+                    changeSpreadFactor(-0.1F);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 9
                 {
                     Debug.Log("switch second button vraag 9");
                     storyPanel10B.SetActive(true);
-                    changeSpreadFactor(0);
+                    changeSpreadFactor(-0.05F);
                 }
                 
                 break;
@@ -375,13 +375,13 @@ public class GameManager : MonoBehaviour {
                 {
                     Debug.Log("switch first button vraag 10");
                     storyPanel11A.SetActive(true);
-                    changeSpreadFactor(0);
+                    changeSpreadFactor(0.2F);
                 }
                 if (secondButton == true && firstButton == false) // onderste knop vraag 10
                 {
                     Debug.Log("switch second button vraag 10");
                     storyPanel11B.SetActive(true);
-                    changeSpreadFactor(0);
+                    changeSpreadFactor(-0.3F);
                 }
                 
                 break;
