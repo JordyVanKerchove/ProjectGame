@@ -108,112 +108,114 @@ public class GameManager : MonoBehaviour {
                 dayIsSet = true;
             }
 
-            if(nbrOfDaysAfterReachedAll == timer.nbrOfDays - 7)
+            if(nbrOfDaysAfterReachedAll == timer.nbrOfDays - 3)
             {
                 Debug.Log("count");
                 if (!gameEnded)
                 {
-                    Debug.Log("XXX");
                     endPanel.SetActive(true);
                     gameEnded = true;
                 }
             }
         }
 
-        switch (timer.nbrOfDays)
+        if (!gameEnded)
         {
-            case 7:
-                if (mustStop)
-                {
-                    panel1.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 14:
-                if (mustStop)
-                {
-                    panel2.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 21:
-                if (mustStop)
-                {
-                    panel3.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 28:
-                if (mustStop)
-                {
-                    panel4.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 35:
-                if (mustStop)
-                {
-                    panel5.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 42:
-                if (mustStop)
-                {
-                    panel6.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 49:
-                if (mustStop)
-                {
-                    panel7.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 56:
-                if (mustStop)
-                {
-                    panel8.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 63:
-                if (mustStop)
-                {
-                    panel9.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 70:
-                if (mustStop)
-                {
-                    panel10.SetActive(true);
-                    PauseSchools();
-                    mustStop = false;
-                }
-                break;
-            case 77:
-                if (mustStop)
-                {
-                    endPanel.SetActive(true);
-                    //PauseSchools();
-                    mustStop = false;
-                    gameEnded = true;
-                }
-                break;
-            default:
-                mustStop = true;
-                break;
+            switch (timer.nbrOfDays)
+            {
+                case 7:
+                    if (mustStop)
+                    {
+                        panel1.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 14:
+                    if (mustStop)
+                    {
+                        panel2.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 21:
+                    if (mustStop)
+                    {
+                        panel3.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 28:
+                    if (mustStop)
+                    {
+                        panel4.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 35:
+                    if (mustStop)
+                    {
+                        panel5.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 42:
+                    if (mustStop)
+                    {
+                        panel6.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 49:
+                    if (mustStop)
+                    {
+                        panel7.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 56:
+                    if (mustStop)
+                    {
+                        panel8.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 63:
+                    if (mustStop)
+                    {
+                        panel9.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 70:
+                    if (mustStop)
+                    {
+                        panel10.SetActive(true);
+                        PauseSchools();
+                        mustStop = false;
+                    }
+                    break;
+                case 73:
+                    if (mustStop)
+                    {
+                        endPanel.SetActive(true);
+                        //PauseSchools();
+                        mustStop = false;
+                        gameEnded = true;
+                    }
+                    break;
+                default:
+                    mustStop = true;
+                    break;
+            }
         }
     }
 
