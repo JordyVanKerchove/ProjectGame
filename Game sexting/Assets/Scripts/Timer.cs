@@ -52,8 +52,8 @@ public class Timer : MonoBehaviour {
                 currentDate = currentDate.AddDays(1);
                 nbrOfDays++;
             }
-            coRoutineIsRunning = false;
         }
+        coRoutineIsRunning = false;
     }
 
     void UpdateUI()
