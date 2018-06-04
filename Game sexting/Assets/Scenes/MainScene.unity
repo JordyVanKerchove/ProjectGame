@@ -477,7 +477,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &9969688
 MonoBehaviour:
@@ -722,7 +722,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 771.96014, y: 64.33001}
+  m_SizeDelta: {x: 773.57135, y: 64.83691}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &11024963
 MonoBehaviour:
@@ -1833,7 +1833,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -1845,10 +1845,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'VERHAAL 8:
-
-
-    De verspreiding blijft even snel groeien.'
+  m_Text: De verspreiding blijft even snel groeien.
 --- !u!222 &40637296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2309,7 +2306,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &55384848
 MonoBehaviour:
@@ -2579,6 +2576,7 @@ RectTransform:
   - {fileID: 1597936470}
   - {fileID: 133143601}
   - {fileID: 40637294}
+  - {fileID: 900194278}
   m_Father: {fileID: 1237876033}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2789,7 +2787,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &64028537
 MonoBehaviour:
@@ -3313,7 +3311,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65473233
 MonoBehaviour:
@@ -4423,7 +4421,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &105672786
 RectTransform:
@@ -5174,7 +5172,7 @@ GameObject:
   m_TagString: MaterialText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &142170002
 RectTransform:
@@ -5192,7 +5190,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 153.25679, y: 34.057064}
+  m_SizeDelta: {x: 145.3241, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142170003
 MonoBehaviour:
@@ -5227,7 +5225,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -5985,7 +5983,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183807555
 MonoBehaviour:
@@ -6253,7 +6251,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &195575606
 RectTransform:
@@ -6536,7 +6534,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 130.55208, y: 34.057064}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &214321279
 MonoBehaviour:
@@ -6571,7 +6569,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -6830,7 +6828,7 @@ GameObject:
   m_TagString: MaterialButtonLayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &230192474
 RectTransform:
@@ -8559,7 +8557,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &334550554
 RectTransform:
@@ -9384,7 +9382,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372731787
 MonoBehaviour:
@@ -11102,7 +11100,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442787081
 MonoBehaviour:
@@ -11608,7 +11606,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &454327653
 RectTransform:
@@ -12240,7 +12238,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 281.9168, y: 32.165005}
+  m_SizeDelta: {x: 283.94092, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476876480
 MonoBehaviour:
@@ -12403,7 +12401,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1456.8856, y: 32.165005}
+  m_SizeDelta: {x: 1480.07, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485642869
 MonoBehaviour:
@@ -12963,7 +12961,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 221.37093, y: 32.165005}
+  m_SizeDelta: {x: 223.57553, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517324329
 MonoBehaviour:
@@ -13284,7 +13282,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &538973183
 RectTransform:
@@ -13324,8 +13322,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 9ee1ead1f99fd9f4db065f5e3239b865, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -14331,7 +14329,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612256997
 MonoBehaviour:
@@ -18053,7 +18051,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &751328700
 MonoBehaviour:
@@ -20517,7 +20515,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!114 &846251516
 MonoBehaviour:
@@ -21039,7 +21037,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &871341178
 RectTransform:
@@ -21442,7 +21440,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 476.79892, y: 32.165005}
+  m_SizeDelta: {x: 485.1589, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890400987
 MonoBehaviour:
@@ -21577,6 +21575,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &900194277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 900194278}
+  - component: {fileID: 900194280}
+  - component: {fileID: 900194279}
+  m_Layer: 9
+  m_Name: verhaal Titel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &900194278
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900194277}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000087, y: 1.0000087, z: 1.0000087}
+  m_Children: []
+  m_Father: {fileID: 59041664}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0024952, y: 71}
+  m_SizeDelta: {x: 1030.7, y: 295.78}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &900194279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900194277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8745098}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: fca79656ec2bd1d42a1a2ef012320682, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 71
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'VERHAAL 8:'
+--- !u!222 &900194280
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900194277}
 --- !u!1 &902063976
 GameObject:
   m_ObjectHideFlags: 0
@@ -23101,8 +23173,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Terwijl je wegwandelt hoor je de personen die je nariepen nog met je lachen.
-    Voor de rest hoor je niets meer van hun.
+  m_Text: Terwijl je aan het wegwandelen bent hoor je de personen die je nariepen
+    nog met je lachen. Voor de rest hoor je niets meer van hun.
 --- !u!222 &951069546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26476,7 +26548,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1109340699
 MonoBehaviour:
@@ -29200,7 +29272,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1251973622
 MonoBehaviour:
@@ -29506,7 +29578,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259737131
 MonoBehaviour:
@@ -30986,7 +31058,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1321504737
 MonoBehaviour:
@@ -33375,7 +33447,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 391.65625, y: 32.165005}
+  m_SizeDelta: {x: 395.72867, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1388391358
 MonoBehaviour:
@@ -34994,7 +35066,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1451022700
 MonoBehaviour:
@@ -38467,7 +38539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.4}
   m_AnchorMax: {x: 0.5, y: 0.4}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 87.624}
   m_SizeDelta: {x: 1030.7, y: 295.78003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568435141
@@ -39040,7 +39112,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 766.28394, y: 32.165005}
+  m_SizeDelta: {x: 775.80707, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1597933429
 MonoBehaviour:
@@ -39406,7 +39478,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1609674330
 MonoBehaviour:
@@ -40282,7 +40354,7 @@ GameObject:
   m_TagString: MaterialButtonLayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &1635321718
 RectTransform:
@@ -42474,7 +42546,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 166.5012, y: 32.165005}
+  m_SizeDelta: {x: 167.68164, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772609785
 MonoBehaviour:
@@ -46144,7 +46216,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 244.07564, y: 32.165005}
+  m_SizeDelta: {x: 245.93307, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1926210084
 MonoBehaviour:
@@ -46691,7 +46763,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1944300419
 MonoBehaviour:
@@ -47841,7 +47913,7 @@ GameObject:
   m_TagString: 
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!225 &1995730467
 CanvasGroup:
@@ -48009,7 +48081,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 329.2183, y: 32.165005}
+  m_SizeDelta: {x: 333.12753, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012460127
 MonoBehaviour:
@@ -48097,7 +48169,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 109.73943, y: 32.165005}
+  m_SizeDelta: {x: 111.787766, y: 33.536327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013211378
 MonoBehaviour:
