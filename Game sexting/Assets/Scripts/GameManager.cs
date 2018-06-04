@@ -113,7 +113,6 @@ public class GameManager : MonoBehaviour {
                 Debug.Log("count");
                 if (!gameEnded)
                 {
-                    Debug.Log("XXX");
                     endPanel.SetActive(true);
                     gameEnded = true;
                 }
@@ -204,7 +203,7 @@ public class GameManager : MonoBehaviour {
                         mustStop = false;
                     }
                     break;
-                case 77:
+                case 73:
                     if (mustStop)
                     {
                         endPanel.SetActive(true);
