@@ -104,15 +104,19 @@ public class GameManager : MonoBehaviour {
             if (dayIsSet == false)
             {
                 nbrOfDaysAfterReachedAll = timer.nbrOfDays;
-                //Debug.Log("set");
+                Debug.Log("set");
                 dayIsSet = true;
             }
 
             if(nbrOfDaysAfterReachedAll == timer.nbrOfDays - 7)
             {
-                //Debug.Log("count");
-                endPanel.SetActive(true);
-                //PauseSchools();
+                Debug.Log("count");
+                if (!gameEnded)
+                {
+                    Debug.Log("XXX");
+                    endPanel.SetActive(true);
+                    gameEnded = true;
+                }
             }
         }
 
@@ -512,8 +516,8 @@ public class GameManager : MonoBehaviour {
 
     public void ifEindwoord()
     {
-        endPanel.SetActive(false);
         tipsScherm.SetActive(true);
+        endPanel.SetActive(false);
     }
 
     public void ifTips()
