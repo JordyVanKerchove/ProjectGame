@@ -12036,7 +12036,6 @@ GameObject:
   - component: {fileID: 461162461}
   - component: {fileID: 461162460}
   - component: {fileID: 461162459}
-  - component: {fileID: 461162463}
   - component: {fileID: 461162462}
   m_Layer: 5
   m_Name: PanelLayer D
@@ -12128,55 +12127,11 @@ MonoBehaviour:
   otherSchools:
   - {fileID: 1338119544}
   - {fileID: 1692191815}
-  - {fileID: 0}
+  - {fileID: 1553675064}
   - {fileID: 850304969}
   nbrOfStudents: 100
   nbrOfReachedStudents: 0
   isInfected: 0
---- !u!212 &461162463
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 461162457}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9ca4fc835e2378b4fa5a5abcd354dc55, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.17, y: 3.73}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
 --- !u!1 &475383680
 GameObject:
   m_ObjectHideFlags: 0
@@ -20756,7 +20711,7 @@ MonoBehaviour:
   - {fileID: 1338119544}
   - {fileID: 1692191815}
   - {fileID: 1553675064}
-  - {fileID: 0}
+  - {fileID: 461162462}
   nbrOfStudents: 100
   nbrOfReachedStudents: 0
   isInfected: 0
@@ -31525,7 +31480,7 @@ MonoBehaviour:
   otherSchools:
   - {fileID: 1692191815}
   - {fileID: 1553675064}
-  - {fileID: 0}
+  - {fileID: 461162462}
   - {fileID: 850304969}
   nbrOfStudents: 100
   nbrOfReachedStudents: 1
@@ -38182,7 +38137,7 @@ MonoBehaviour:
   otherSchools:
   - {fileID: 1338119544}
   - {fileID: 1692191815}
-  - {fileID: 0}
+  - {fileID: 461162462}
   - {fileID: 850304969}
   nbrOfStudents: 100
   nbrOfReachedStudents: 0
@@ -41033,7 +40988,7 @@ MonoBehaviour:
   otherSchools:
   - {fileID: 1338119544}
   - {fileID: 1553675064}
-  - {fileID: 0}
+  - {fileID: 461162462}
   - {fileID: 850304969}
   nbrOfStudents: 100
   nbrOfReachedStudents: 0
